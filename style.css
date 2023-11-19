@@ -428,10 +428,6 @@ to this section's matching END comment to see page-specific styles.
     border-top-color: #eeeeee;
   }
   
-  .table > tbody > tr:hover > td {
-    /*         background-color: #FAFAFA; */
-  }
-  
   @media (max-width: 767px) {
     .table-no-more,
     .table-no-more > thead,
@@ -456,13 +452,7 @@ to this section's matching END comment to see page-specific styles.
       padding-left: 45%;
     }
   
-    .table-no-more > tbody > tr:nth-child(even) > td {
-      /*             background-color: #ffffff; */
-    }
   
-    .table-no-more > tbody > tr:nth-child(odd) > td {
-      /*             background-color: #FAFAFA; */
-    }
   
     .table-no-more > tbody > tr > td:before {
       position: absolute;
