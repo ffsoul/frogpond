@@ -1,0 +1,487 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+/* 
+  The style rules specify elements by type and by attributes such as class and ID
+  Each section indicates an element or elements, then lists the style properties to apply
+  See if you can cross-reference the rules in this file with the elements in index.html
+*/
+
+/* Our default values set as CSS variables */
+:root {
+    --color-bg: #242418;
+    --color-text-main: #d1cbbb;
+    --color-primary: #d1cbbb;
+    --wrapper-height: 87vh;
+    --image-max-width: 300px;
+    --image-margin: 3rem;
+  }
+  
+  /* Basic page style resets */
+  * {
+    box-sizing: border-box;
+  }
+  [hidden] {
+    display: none !important;
+  }
+  
+  /* Import fonts */
+  @font-face {
+    font-family: HK Grotesk;
+    src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+      format("opentype");
+  }
+  @font-face {
+    font-family: HK Grotesk;
+    font-weight: bold;
+    src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+      format("opentype");
+  }
+  
+  @font-face {
+    font-family: Altone;
+    font-weight: normal;
+    src: url("https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/Altone-Regular.ttf?v=1680572287336")
+      format("truetype");
+  }
+  
+  @font-face {
+    font-family: Altone;
+    font-weight: bold;
+    src: url("https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/Altone-Bold.ttf?v=1680572306969")
+      format("truetype");
+  }
+  
+  @font-face {
+    font-family: bahn;
+    src: url("https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/BAHNSCHRIFT.TTF?v=1680583644544")
+      format("truetype");
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: bahn;
+    font-weight: bold;
+    src: url("https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/Bahnschrift-Bold.TTF?v=1680572691032")
+      format("truetype");
+  }
+  
+  /******************************************************************************
+  END Glitch hello-app default styles
+  ******************************************************************************/
+  
+  body {
+    font-family: HK Grotesk, sans-serif;
+    background-color: var(--color-bg);
+    margin: 0px 40px 40px 40px;
+    margin-bottom: 20px;
+  }
+  
+  /* Page structure */
+  .wrapper {
+    min-height: var(--wrapper-height);
+    display: grid;
+    place-items: center;
+    margin: 0 1rem;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Subheading */
+  
+  h2 {
+    color: #adfe52;
+    font-size: 10vw;
+    text-align: left;
+    font-family: Altone, sans-serif;
+    font-weight: bold;
+    margin: 20vh 0px 8vh 0px;
+    line-height: 10vw;
+  }
+  
+  /* Heading */
+  h1 {
+    color: #242418;
+    font-size: 40px;
+    text-align: left;
+    font-family: Altone, sans-serif;
+    font-weight: bold;
+  }
+  
+  h1a {
+    color: #242418;
+    text-align: left;
+    font-size: 8vw;
+    font-family: Altone, sans-serif;
+    font-weight: bold;
+  }
+  
+  h1c {
+    color: #242418;
+    text-align: center;
+    font-size: 2vw;
+    font-family: Altone, sans-serif;
+    font-weight: bold;
+  }
+  
+  /* Body Text */
+  p {
+    text-align: left;
+    font-size: 40px;
+    font-family: HK Grotesk, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  p2 {
+    text-align: left;
+    font-size: 4vw;
+    font-family: altone, sans-serif;
+    color: #ffffff;
+    line-height: 1.5 rem;
+  }
+  
+  p3 {
+    text-align: left;
+    font-size: 30px;
+    font-family: bahn, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  p4 {
+    font-size: 16px;
+    font-family: bahn, sans-serif;
+    font-weight: normal;
+    color: #ffffff;
+  }
+  
+  p5 {
+    font-size: 12px;
+    font-family: bahn, sans-serif;
+    font-weight: normal;
+    color: #ffffff;
+  }
+  
+  @media only screen and (max-width: 640px) {
+    h1a {
+      font-size: 12vw;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    h1c {
+      font-size: 2vh;
+    }
+    h2 {
+      margin-top: 12vh;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .window {
+    line-height: 130%;
+    padding: 3px 3px 25px 3px;
+  }
+  
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    /*   padding: 10% 10% 0% 10%;  */
+    padding: 15vh 0px 3vh 0px;
+    width: 100%;
+    min-height: 100%;
+    /*   padding-bottom: 25px; */
+    justify-content: center;
+    align-content: center;
+    background: #adfe52;
+  }
+  
+  @media only screen and (max-width: 640px) {
+    .hero {
+      padding: 10vh 0px 3vh 0px;
+      flex-wrap: wrap !important;
+    }
+  }
+  
+  .gallery {
+    padding: 0% 5% 5% 5%;
+    margin: 20px;
+  }
+  
+  .ui.card > .content > .header,
+  .ui.cards > .card > .content > .header {
+    font-family: Altone, sans-serif;
+    font-weight: bold;
+    color: #242418;
+  }
+  
+  .ui.card > .content > .description,
+  .ui.cards > .card > .content > .description {
+    font-family: bahn, sans-serif;
+    font-weight: normal;
+    color: #242418;
+  }
+  
+  .ui.card,
+  .ui.cards > .card {
+    background-color: #adfe52;
+    color: #242418;
+    border: 5px solid #adfe52;
+  }
+  
+  .autofrogbox {
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px 20px 20px;
+  }
+  
+  .sidetext {
+    padding: 0 20px 10px 20px;
+  }
+  
+  .item {
+    font-size: 1.5vh;
+    font-family: Altone, sans-serif;
+    font-weight: Bold;
+  }
+  
+  .projectOverview {
+    margin: 30px 10px 10px 10px;
+  }
+  
+  .detail {
+    margin: 30px 10px 10px 10px;
+  }
+  
+  .collaborators {
+    margin: 30px 10px 10px 10px;
+  }
+  
+  .projectDetails {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 40vw 40px 0px;
+  }
+  
+  .fullpg {
+    margin: 0px 0px 0px 0px;
+    height: 100%;
+  }
+  
+  .ui.menu {
+    font-family: Altone, sans-serif;
+    font-weight: Bold;
+    background-color: #adfe52;
+    color: #242418;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+    border-radius: 0.28571429rem;
+    min-height: 2.85714286em;
+  }
+  
+  .menu > a {
+    font-family: Altone, sans-serif;
+    font-weight: Bold;
+  }
+  
+  .ui.menu .dropdown.item .menu {
+    background-color: #adfe52;
+    font-family: Altone, sans-serif;
+    font-weight: Bold;
+  }
+  
+  .break {
+    flex-basis: 100%;
+    height: 100px;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .break {
+      height: 10px;
+    }
+  }
+  
+  .hero2 {
+    width: 45%;
+  }
+  
+  .hero3 {
+    height: 60vh;
+  }
+  
+  
+  img{
+      transition: transform .2s;
+    width: auto;
+      margin:0 auto;
+  }
+  
+  .figure{
+      transition: transform .2s;
+    width: auto;
+      margin:0 auto;
+    position:static;
+  }
+  .figure:hover{
+      transform:scale(2.5);
+  }
+  
+  .banner {
+    width: 55vw;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .imgWindowH {
+    height: 80vh;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .paragraph {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-right: 40vw;
+    text-indent: 20px;
+  }
+  
+  .ui.menu .ui.dropdown .menu > .item {
+    font-weight: bold !important;
+  }
+  
+  @media only screen and (max-width: 640px) {
+    .projectDetails {
+      flex-wrap: wrap;
+      padding-right: 10vw;
+    }
+    .banner {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      width: 80vw;
+      margin-bottom: 20px;
+    }
+    .paragraph {
+      padding-right: 5vw;
+    }
+    .hero2 {
+      width: 100%;
+    }
+    .hero3 {
+      height: 25vh;
+    }
+  }
+  /* 
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  
+   */
+  
+  /*******************************
+  * TABLE NO MORE - RESIZE TO MOBILE SIZE
+  * Format a normal table to look great on mobile.
+  *******************************/
+  .table {
+    overflow: hidden;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12),
+      0 1px 6px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12),
+      0 1px 6px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .table > thead > tr > th {
+    border-bottom-color: #eeeeee;
+  }
+  
+  .table > tbody > tr > td,
+  .table > tbody > tr > th,
+  .table > thead > tr > td,
+  .table > thead > tr > th {
+    padding: 15px;
+    /*         background-color: #ffffff; */
+    border-top-color: #eeeeee;
+  }
+  
+  .table > tbody > tr:hover > td {
+    /*         background-color: #FAFAFA; */
+  }
+  
+  @media (max-width: 767px) {
+    .table-no-more,
+    .table-no-more > thead,
+    .table-no-more > thead > tr,
+    .table-no-more > thead > tr > th,
+    .table-no-more > tbody,
+    .table-no-more > tbody > tr,
+    .table-no-more > tbody > tr > td {
+      display: block;
+    }
+  
+    .table-no-more > thead {
+      content: "";
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+      opacity: 0;
+    }
+  
+    .table-no-more > tbody > tr > td {
+      position: relative;
+      padding-left: 45%;
+    }
+  
+    .table-no-more > tbody > tr:nth-child(even) > td {
+      /*             background-color: #ffffff; */
+    }
+  
+    .table-no-more > tbody > tr:nth-child(odd) > td {
+      /*             background-color: #FAFAFA; */
+    }
+  
+    .table-no-more > tbody > tr > td:before {
+      position: absolute;
+      top: 15px;
+      left: 5%;
+      width: 40%;
+      white-space: nowrap;
+      font-weight: bold;
+    }
+  
+    .table-no-more > tbody > tr > td:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40%;
+      height: 100%;
+      border-right: 1px solid #ffffff;
+    }
+  }
+  
+  
