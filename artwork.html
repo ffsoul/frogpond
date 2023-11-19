@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <title>Kenny's Frog Pond</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/Logo.png?v=1680541242204"
+    />
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://kenny-ly.glitch.me/" />
+    <meta
+      name="description"
+      content="Kenny Ly - Designer, Artist, and Frog Enthusiast"
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Kenny's Frog Pond" />
+    <meta property="og:type" content="portfolio" />
+    <meta property="og:url" content="https://kenny-portfolio.glitch.me/" />
+    <meta
+      property="og:description"
+      content="Kenny Ly - Designer, Artist, and Frog Enthusiast"
+    />
+      <meta
+      property="og:image"
+      content="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/logoHD.png?v=1680996367498"
+    />
+
+    <!--     <link rel="stylesheet" href="https://unpkg.com/98.css" /> -->
+
+    <link rel="stylesheet" href="semantic.min.css" />
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--     Import the webpage's script -->
+    <script src="/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+      integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--     <link rel="stylesheet" href="woah.css" /> -->
+  </head>
+
+  <style>
+      * {
+      box-sizing: border-box;
+    }
+
+
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .columnBox {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+
+    .columnBox img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .columnBox {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .columnBox {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+
+  <body>
+    <!--Top Menu -->
+    <div class="ui top fixed menu">
+      <a class="item" href="index.html">
+        <img
+          style="width: 4.5vh"
+          src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/Logo.png?v=1680541242204"
+        />
+      </a>
+
+      <div class="right menu">
+        <a class="item" href="index.html">Home</a>
+        <div class="ui simple dropdown item">
+          Workshop
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="classprojects.html">Class Projects</a>
+            <a class="item" href="clientwork.html">Client Work</a>
+          </div>
+        </div>
+        <div class="ui simple dropdown item">
+          Playground
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="artwork.html">Artwork</a>
+            <a class="item" href="modeling.html">Modeling</a>
+            <a class="item" href="prints.html">Prints</a>
+          </div>
+        </div>
+        <a class="item" href="about.html">About Me</a>
+      </div>
+    </div>
+
+    <h2 style="text-align: center; margin-bottom: 5px">Playground</h2>
+
+    <p3
+      style="
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 10px;
+        font-size: 24px;
+      "
+      >Artwork</p3
+    >
+
+<!--     <img
+      style="width: 100%; margin: 0px -40px 0px 0px"
+      src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/rat-rage-rage.gif?v=1680540187537"
+    />
+    <br />
+    <p4
+      style="
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+      "
+    >
+      aw rats! currently under construction, check back soon!</p4
+    >
+    <br /> -->
+
+    <div class="row">
+      <div class="columnBox">
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awVin.jpg?v=1680979936270" style="width: 100%" />
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awPau.jpg?v=1680979920358" style="width: 100%" />
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awLilith.jpg?v=1680979908606" style="width: 100%" />
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awEudenUnendingWorld.jpg?v=1680979866786" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awGraceBellina.jpg?v=1680979888211" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awEudenDies.jpg?v=1680979866107" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awJeanneTwins.jpg?v=1680979904422" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awSheila.png?v=1680979927953" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awTemplarHope.jpg?v=1680979933830" style="width: 100%" /> -->
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awLinnea2.png?v=1680979911218" style="width: 100%" />
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awCelliera.jpg?v=1680979855906" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awAeyga.png?v=1680979851909" style="width: 100%" /> -->
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awFrogs.png?v=1680979886883" style="width: 100%" />
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awGraceBunny.jpg?v=1680979889354" style="width: 100%" /> -->
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awKnights.jpg?v=1680979905561" style="width: 100%" />
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awHumids.jpg?v=1680979903111" style="width: 100%" />
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awWacoon.jpg?v=1680979937386" style="width: 100%" /> -->
+           <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awKromer.jpg?v=1680979907065" style="width: 100%" />
+
+      </div>
+      <div class="columnBox">
+         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awEudenSpin.gif?v=1680979847219" style="width: 100%" />
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awSui.jpg?v=1680979933384" style="width: 100%" />
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awJeanne.jpg?v=1680979903624" style="width: 100%" />
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awFellas.png?v=1680979881257" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awGraceShortDress.jpg?v=1680979893761" style="width: 100%" /> -->
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awEudenAndLeo.jpg?v=1680979865426" style="width: 100%" />
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awEzelith.jpg?v=1680979867832" style="width: 100%" />
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awPrimalMids.jpg?v=1680979923767" style="width: 100%" />
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awNedrick.jpg?v=1680979915554" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awLiquidPlatypus.jpg?v=1680979912054" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awLinnea1.jpg?v=1680979909132" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awGraceRegina.jpg?v=1680979891890" style="width: 100%" /> -->
+        
+        
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awWhiteWinged1.jpg?v=1680979840671" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awGraceBunnyDay.jpg?v=1680979889842" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awGraceYachiyo.jpg?v=1680979895789" style="width: 100%" /> -->
+<!--       <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awJinlorda.jpg?v=1680979904904" style="width: 100%" /> -->
+      </div>
+      <div class="columnBox">
+       <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awOriga.png?v=1680979917907" style="width: 100%" />
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awPizza.jpg?v=1680979922954" style="width: 100%" /> -->
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awFWAlberia.jpg?v=1680979887431" style="width: 100%" />
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awFranSummer.jpg?v=1680979882822" style="width: 100%" /> -->
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awFranBirthday.jpg?v=1680979882341" style="width: 100%" />
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awElisanne.jpg?v=1680979864018" style="width: 100%" /> -->
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awRyo.jpg?v=1680979925796" style="width: 100%" />
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awChronos.jpg?v=1680979891370" style="width: 100%" /> -->
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awMidsChibi.jpg?v=1680979913409" style="width: 100%" />
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awLaranoa.jpg?v=1680979907576" style="width: 100%" />
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awGraceS.png?v=1680979893259" style="width: 100%" />
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awDelphi.jpg?v=1680979863402" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awAndromeda.jpg?v=1680979855441" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awYachiyo.jpg?v=1680979843141" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awHMeric.jpg?v=1680979901171" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awHolly.jpg?v=1680979902313" style="width: 100%" /> -->
+        
+      </div>
+      <div class="columnBox">
+       <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awHalloween.png?v=1680979900597" style="width: 100%" />
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awGraceSleep.gif?v=1680979848739" style="width: 100%" />
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awGraceBondforged.jpg?v=1680979888918" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awFWAlberia.jpg?v=1680979887431" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awGraceChibi.png?v=1680979890303" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awFaust.jpg?v=1680979872394" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awEuden4.5.jpg?v=1680979864616" style="width: 100%" /> -->
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awMeat.jpg?v=1680979912992" style="width: 100%" />
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awSkoggy.jpg?v=1680979931683" style="width: 100%" />
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awMikoto.jpg?v=1680979914835" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awGraceSwimsuit.jpg?v=1680979894321" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awGraceTwins.jpg?v=1680979894899" style="width: 100%" /> -->
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awAgni.jpg?v=1680979852516" style="width: 100%" />
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awAlpha.jpg?v=1680979854890" style="width: 100%" />
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awChelle.png?v=1680979860519" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awClaudeHilda.jpg?v=1680979861321" style="width: 100%" /> -->
+<!--         <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awDanboii.jpg?v=1680979861707" style="width: 100%" /> -->
+      <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awLightAndShadow.jpg?v=1680979908027" style="width: 100%" />
+<!--               <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awGris.jpg?v=1680979896882" style="width: 100%" /> -->
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awWhiteWinged2.jpg?v=1680979842514" style="width: 100%" />
+        <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/awWatamelon.png?v=1680979838898" style="width: 100%" />
+
+      </div>
+    </div>
+  </body>
+</html>
