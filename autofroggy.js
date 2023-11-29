@@ -22,9 +22,8 @@ function windowResized() {
 function setup() {
   colorMode(HSB, 100);
   canvas = createCanvas(350, 350);
-  
-  
-  canvas.parent('autofroggy');
+
+  canvas.parent("autofroggy");
 
   // canvas.position(100,100);
 
