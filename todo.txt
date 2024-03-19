@@ -1,0 +1,82 @@
+Overall
+- Fix header size
+- Fix scaling on mobile for images on some pages
+- New page for RRK work? or should it be part of print?
+- set images to open in expanded view/in new tab
+- relink images to github repo
+- Projects should include brief "findings" section at top
+- Max image scaling to biggest width/height?
+- compress all images for faster loading
+- add footer on every page?
+- include more section takeaways    
+
+Index
+- change cat to frog
+- change tagline? interaction designer? community designer? professional shenaniganizer?
+- remove save on keybind on autofroggy
+- reorder projects on main page
+- single stacker flexboxes on mobile?
+- fix images for 2 new projects on main page
+- visual separator for top 3 projects?
+
+About Me
+- COMPLETE! take inspiration from what i said for my presentation for internship (more professional shenaniganizer)
+- COMPLETE! remove high school education, have information match what I have on my resume/linkedin
+
+Playground - Artwork
+- COMPLETE! update with new art
+
+Playground - Print
+- update with new prints
+
+Workshop - Client Work
+- Organize Projects and have them link to a page with a brief description? maybe also hovertext like nadine's website
+https://nadinepermana.xyz/play/
+https://www.youtube.com/watch?v=hr4JiDr7Aec 
+
+Workshop - Class Projects
+- New Images + Restructure in the same way as client work.
+
+A Gremlin's Guide To UT
+- replace some images with HD versions
+- general clean up to meet current standards
+
+GUNK - Hair and Skincare
+- Slight formatting issues
+- Big formatting issue at top section
+- Create physical mockups and do photoshoot?
+
+Sword in the Throne
+- Create the actual fucking writeup?
+- Image scaling is a massive issue here
+
+Alberian Blood
+- Needs actual process
+- Explain time working with collaborators as leader
+- Explain working under deadline
+- Explain unique structure
+
+Farewell Alberia
+- Needs actual process
+- Explain time working as leader
+- Explain time working as social media manager, especially wrangling people for the weekly posts
+- Logo breakdown
+- Explain working under deadline
+- Explain working on formatting pages
+
+Typography and Localization
+- Explain deadline crunch
+- Explain working with layouts and grids for the first time on a big projects
+- Explain working with prewritten blocks of text vs text I've made myself
+- Explain the process of recreating logos from scratch
+
+Vis Inquiries
+- The Grand :Naruhodo: Count rename
+- rewrite project overview
+- rewrite tool stack
+- rewrite some language
+- image formatting
+- text line length formatting
+- remove the amount of fucks
+- greater in depth post mortem
+- Clean up example chart
