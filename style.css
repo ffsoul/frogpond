@@ -159,9 +159,26 @@ p3 {
   font-weight: bold;
   color: #ffffff;
   padding-top: 10px;
+  padding-left: 10vw;
+}
+
+p3h {
+  text-align: left;
+  font-size: 30px;
+  font-family: bahn, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 10px;
 }
 
 p4 {
+  font-size: 16px;
+  font-family: bahn, sans-serif;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+p4h {
   font-size: 16px;
   font-family: bahn, sans-serif;
   font-weight: normal;
@@ -339,9 +356,14 @@ img {
 }
 
 .banner {
-  width: 55vw;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  display: block;
+  max-width:60vw;
+  max-height:80vh;
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 0vw;
 }
 
 .imageTall {
@@ -353,8 +375,12 @@ img {
 .paragraph {
   margin-top: 5px;
   margin-bottom: 5px;
-  padding-right: 40vw;
+  padding-right: 30vw;
+  padding-top: 10px;
+  padding-bottom:10px;
   text-indent: 20px;
+  line-height: 125%;
+  padding-left: 10vw;
 }
 
 aside {
