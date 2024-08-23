@@ -154,13 +154,13 @@ function mouseClicked(x, y, r) {
     pause = !pause;
   }
 
-  if (dist(mouseX, mouseY, cx1, cy1) < 13) {
-    save("myFroggy.png");
-  }
+  // if (dist(mouseX, mouseY, cx1, cy1) < 13) {
+  //   save("myFroggy.png");
+  // }
 }
 
-function keyTyped() {
-  if (key === "s") {
-    save("froggy.png");
-  }
-}
+// function keyTyped() {
+//   if (key === "s") {
+//     save("froggy.png");
+//   }
+// }

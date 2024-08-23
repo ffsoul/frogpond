@@ -47,14 +47,14 @@ to this section's matching END comment to see page-specific styles.
 @font-face {
   font-family: Altone;
   font-weight: normal;
-  src: url("https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/Altone-Regular.ttf?v=1680572287336")
+  src: url("https://kennycly.com/assets/fonts/AltoneTrial-Regular.ttf")
     format("truetype");
 }
 
 @font-face {
   font-family: Altone;
   font-weight: bold;
-  src: url("https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/Altone-Bold.ttf?v=1680572306969")
+  src: url("https://kennycly.com/assets/fonts/AltoneTrial-Bold.ttf")
     format("truetype");
 }
 
@@ -68,9 +68,10 @@ to this section's matching END comment to see page-specific styles.
 @font-face {
   font-family: bahn;
   font-weight: bold;
-  src: url("https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/Bahnschrift-Bold.TTF?v=1680572691032")
+  src: url("https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/BAHNSCHRIFT.TTF?v=1680583644544")
     format("truetype");
 }
+
 
 /******************************************************************************
   END Glitch hello-app default styles
@@ -81,6 +82,10 @@ body {
   background-color: var(--color-bg);
   margin: 0px 40px 40px 40px;
   margin-bottom: 20px;
+}
+
+.projectOverview {
+  font-size:20px;
 }
 
 /* Page structure */
@@ -95,6 +100,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+footer{
+  padding-top: 20px;
+  padding-bottom:20px;
 }
 
 /* Subheading */
@@ -120,7 +130,6 @@ h1 {
 
 h1a {
   color: #242418;
-  text-align: left;
   font-size: 8vw;
   font-family: Altone, sans-serif;
   font-weight: bold;
@@ -191,6 +200,13 @@ p5 {
   font-weight: normal;
   color: #ffffff;
 }
+
+.wrapper{
+  margin: 150px auto;
+  width: 70%;
+
+}
+
 
 @media only screen and (max-width: 640px) {
   h1a {
@@ -277,6 +293,7 @@ p5 {
 
 .projectOverview {
   margin: 30px 10px 10px 10px;
+  padding-bottom: 10px;
 }
 
 .detail {
@@ -291,6 +308,7 @@ p5 {
   display: flex;
   justify-content: flex-start;
   padding: 0px 40vw 40px 0px;
+  text-indent:10px;
 }
 
 .fullpg {
@@ -332,7 +350,7 @@ p5 {
 }
 
 .hero2 {
-  max-width:60vw;
+  max-width:40vw;
   max-height:80vh;
   width: auto;
   height: auto;
@@ -360,7 +378,7 @@ img {
 
 .banner {
   display: block;
-  max-width:60vw;
+  max-width:40vw;
   max-height:80vh;
   width: auto;
   height: auto;
@@ -388,7 +406,11 @@ img {
 
 aside {
   padding-right: 20vw;
+  text-indent: 20px;
+  padding-left: 10vw;
 }
+
+
 
 .ui.menu .ui.dropdown .menu > .item {
   font-weight: bold !important;
