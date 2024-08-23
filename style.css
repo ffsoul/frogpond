@@ -201,12 +201,6 @@ p5 {
   color: #ffffff;
 }
 
-.wrapper{
-  margin: 150px auto;
-  width: 70%;
-
-}
-
 
 @media only screen and (max-width: 640px) {
   h1a {
@@ -223,6 +217,9 @@ p5 {
     margin-bottom: 20px;
   }
 }
+
+
+
 
 .window {
   line-height: 130%;
@@ -300,6 +297,7 @@ p5 {
   margin: 30px 10px 10px 10px;
 }
 
+
 .collaborators {
   margin: 30px 10px 10px 10px;
 }
@@ -309,6 +307,16 @@ p5 {
   justify-content: flex-start;
   padding: 0px 40vw 40px 0px;
   text-indent:10px;
+}
+
+.sideImage {
+  display: flex;
+  justify-content: center;
+  padding-left:20vw;
+  padding-right:20vw;
+  text-indent:10px;
+  padding-top:20px;
+  align-items: center;
 }
 
 .fullpg {
@@ -347,6 +355,23 @@ p5 {
   .break {
     height: 10px;
   }
+
+  .projectDetails {
+    flex-wrap: wrap;
+    padding: 0px 5vw 40px 0px;
+  }
+
+  .sideImage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left:0vw;
+    padding-right:0vw;
+    text-indent:10px;
+  }
+
+
+
 }
 
 .hero2 {
@@ -378,7 +403,7 @@ img {
 
 .banner {
   display: block;
-  max-width:40vw;
+  max-width:80vw;
   max-height:80vh;
   width: auto;
   height: auto;
@@ -417,17 +442,14 @@ aside {
 }
 
 @media only screen and (max-width: 640px) {
-  .projectDetails {
-    flex-wrap: wrap;
-    padding-right: 10vw;
-  }
+
   .banner {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    width: 80vw;
     margin-bottom: 20px;
+    max-width:100%;
   }
   .paragraph {
     padding-right: 5vw;
