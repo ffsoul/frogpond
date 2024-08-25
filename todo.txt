@@ -72,10 +72,12 @@ Me and the Machine
 - rewrite project overview
 
 Fella Talk
-- write introduction
-- write short synopsis
-- link to longer writing?
-- FINISH FINISH FINISH
+- add a few more pictures
+- rewrite some sections
 
 Le Loi
 - add process pictures then done smile
+
+RRK
+- add process photos 
+- add some extra text 

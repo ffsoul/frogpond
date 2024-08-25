@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" style="height: 100%">
-  <head>
-    <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="UTF-8" />
 
-    <!--
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!--
       This is the page head - it contains info the browser uses to display the page
       You won't see what's in the head in the page
       Scroll down to the body element for the page content
@@ -14,332 +15,304 @@
       You can write text in a comment and the content won't be visible in the page
     -->
 
-    <title>Kenny's Frog Pond</title>
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="assets/images/index/Logo.png"
-    />
+  <title>Kenny's Frog Pond</title>
+  <link rel="shortcut icon" type="image/png" href="assets/images/index/Logo.png" />
 
-    <!-- Meta tags for SEO and social sharing -->
-    <link rel="canonical" href="https://kennycly.com/" />
-    <meta
-      name="description"
-      content="Kenny Ly - Designer, Artist, and Frog Enthusiast"
-    />
-    <meta name="robots" content="index,follow" />
-    <meta property="og:title" content="Kenny's Frog Pond" />
-    <meta property="og:type" content="portfolio" />
-    <meta property="og:url" content="https://kennycly.com" />
-    <meta
-      property="og:description"
-      content="Kenny Ly - Designer, Artist, and Frog Enthusiast"
-    />
-    <meta
-      property="og:image"
-content="assets/images/index/LogoHD.png"    />
+  <!-- Meta tags for SEO and social sharing -->
+  <link rel="canonical" href="https://kennycly.com/" />
+  <meta name="description" content="Kenny Ly - Designer, Artist, and Frog Enthusiast" />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Kenny's Frog Pond" />
+  <meta property="og:type" content="portfolio" />
+  <meta property="og:url" content="https://kennycly.com" />
+  <meta property="og:description" content="Kenny Ly - Designer, Artist, and Frog Enthusiast" />
+  <meta property="og:image" content="assets/images/index/LogoHD.png" />
 
-    <!--     <link rel="stylesheet" href="https://unpkg.com/98.css" /> -->
+  <!--     <link rel="stylesheet" href="https://unpkg.com/98.css" /> -->
 
-    <link rel="stylesheet" href="semantic.min.css" />
-    <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="semantic.min.css" />
+  <!-- Import the webpage's stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 
-    <!--     Import the webpage's script -->
-    <script src="script.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
-      integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="autofroggy.js" defer></script>
-    <link rel="stylesheet" href="woah.css" />
-  </head>
-  <body class="fullpg">
-    <!--Top Menu -->
-    <div class="ui top fixed menu">
-      <a class="item" href="index.html">
-        <img
-          style="width: 4.5vh"
-                    src="assets/images/index/Logo.png"
+  <!--     Import the webpage's script -->
+  <script src="script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+    integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="autofroggy.js" defer></script>
+  <link rel="stylesheet" href="woah.css" />
+</head>
 
-        />
+<body class="fullpg">
+  <!--Top Menu -->
+  <div class="ui top fixed menu">
+    <a class="item" href="index.html">
+      <img style="width: 4.5vh" src="assets/images/index/Logo.png" />
+    </a>
+
+    <div class="right menu">
+      <a class="item" href="index.html">Home</a>
+      <div class="ui simple dropdown item">
+        Workshop
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="classprojects.html">Class Projects</a>
+          <a class="item" href="clientwork.html">Client Work</a>
+        </div>
+      </div>
+      <div class="ui simple dropdown item">
+        Playground
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="artwork.html">Artwork</a>
+          <a class="item" href="modeling.html">Modeling</a>
+          <a class="item" href="prints.html">Prints</a>
+        </div>
+      </div>
+      <a class="item" href="about.html">About</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="sidetext" style="margin-top: 100px;">
+      <h1a>Hi, I'm Kenny Ly</h1a>
+
+      <h1 style="line-height: 50px;">Graphic Artist - Interaction Designer </br> Printer - Professional Shenanniganizer</h1>
+    </div>
+
+    <div class="woah wowzors autofrogbox" id="autofroggy" style="margin-top: 100px;"></div>
+
+    <div class="break"></div>
+
+    <h1c> ↓ Check out my featured projects! ↓ </h1c>
+  </div>
+
+  <div class="gallery">
+    <div class="ui three doubling link cards grid">
+
+      <!-- Fella Talk -->
+      <a class="card" href="fellatalk.html">
+        <div class="image">
+          <img src="assets/images/index/laFT.png" />
+        </div>
+        <div class="extra content">
+          <div class="header">Let's Talk Fellas - Spring 2024 </br> Case Study </div>
+          <div class="description">
+            A study on the structure of small communities and a book on how to host your own. Coming soon!
+          </div>
+        </div>
       </a>
 
-      <div class="right menu">
-        <a class="item" href="index.html">Home</a>
-        <div class="ui simple dropdown item">
-          Workshop
-          <i class="dropdown icon"></i>
-          <div class="menu">
-            <a class="item" href="classprojects.html">Class Projects</a>
-            <a class="item" href="clientwork.html">Client Work</a>
+      <!-- Visual Inquiries  -->
+      <a class="card" href="visinquiries.html">
+        <div class="image">
+          <img src="assets/images/index/laNC.png" />
+        </div>
+        <div class="extra content">
+          <div class="header">The Grand Naruhodo Count - Fall 2023 </br> Case Study </div>
+          <div class="description">
+            Creating physical representations my use of my overuse of one image across various contexts online.
           </div>
         </div>
-        <div class="ui simple dropdown item">
-          Playground
-          <i class="dropdown icon"></i>
-          <div class="menu">
-            <a class="item" href="artwork.html">Artwork</a>
-            <a class="item" href="modeling.html">Modeling</a>
-            <a class="item" href="prints.html">Prints</a>
+      </a>
+
+      <!-- AI Findings  -->
+      <a class="card" href="aifindings.html">
+        <div class="image">
+          <img src="assets/images/index/laMM.png" />
+        </div>
+        <div class="extra content">
+          <div class="header">Me and the Machine - Fall 2023 </br> Case Study </div>
+          <div class="description">
+            An investigation and self reflection on my relationship with AI image generation and recognition.
           </div>
         </div>
-        <a class="item" href="about.html">About</a>
-      </div>
-    </div>
+      </a>
 
-    <!-- Hero -->
-    <div class="hero">
-      <div class="sidetext" style="margin-top: 100px;">
-        <h1a>Hi, I'm Kenny Ly</h1a>
 
-        <h1 style="line-height: 50px;">Graphic Design - Interaction - Illustration 
-        </br> Letterpress - Silk Screen - Frog Enthusiast</h1>
-      </div>
-
-      <div class="woah wowzors autofrogbox" id="autofroggy" style="margin-top: 100px;"></div>
-
-      <div class="break"></div>
-
-      <h1c> ↓ Check out my featured projects! ↓ </h1c>
-    </div>
-
-    <div class="gallery">
-      <div class="ui three doubling link cards grid">
-
-    <!-- Fella Talk -->
-    <a class="card" href="fellatalk.html">
-      <div class="image">
-        <img
-          src="assets/images/index/laFT.png"
-        />
-      </div>
-      <div class="extra content">
-        <div class="header">Let's Talk Fellas - Spring 2024</div> 
-        <div class="description">
-          A study on the structure of small communities and a book on how to host your own. Coming soon!
+      <!-- EVERLOST -->
+      <a class="card" href="everlost.html">
+        <div class="image">
+          <img src="assets/images/index/laEL.png" />
         </div>
-      </div>
-    </a>
-  
-                <!-- Visual Inquiries  -->
-                <a class="card" href="visinquiries.html">
-                  <div class="image">
-                    <img
-                      src="assets/images/index/laNC.png"
-                    />
-                  </div>
-                  <div class="extra content">
-                    <div class="header">The Grand Naruhodo Count - Fall 2023</div>
-                    <div class="description">
-                      Creating physical representations my use of my overuse of one image across various contexts online.
-                    </div>
-                  </div>
-                </a>
-        
-                        <!-- AI Findings  -->
-                <a class="card" href="aifindings.html">
-                  <div class="image">
-                    <img
-                      src="assets/images/index/laMM.png"
-                    />
-                  </div>
-                  <div class="extra content">
-                    <div class="header">Me and the Machine - Fall 2023</div>
-                    <div class="description">
-                      An investigation and self reflection on my relationship with AI image generation and recognition.   
-                    </div>
-                  </div>
-                </a>
-          
-        
-            <!-- EVERLOST -->
-            <a class="card" href="everlost.html">
-              <div class="image">
-                <img
-                  src="assets/images/index/laEL.png"
-                />
-              </div>
-              <div class="extra content">
-                <div class="header">EVERLOST - Fall 2023</div>
-                <div class="description">
-                  A short graphic novel detailing my feelings of isolation after quarantine.
-                </div>
-              </div>
-            </a>
-        
-        
-        <!-- The Distorted Legend of Le Loi -->
-        <a class="card" href="leloi.html">
-          <div class="image">
-            <img
-              src="assets/images/index/laLL.png"
-            />
+        <div class="extra content">
+          <div class="header">EVERLOST - Fall 2023 </br> Showcase </div>
+          <div class="description">
+            A short graphic novel detailing my feelings of isolation after quarantine.
           </div>
-          <div class="extra content">
-            <div class="header">The Distorted Legend of Le Loi - Fall 2023</div>
-            <div class="description">
-              A 4-piece screen and wood block print series depicting the tales of Vietnam and the legendary Lê Lợi. Coming soon!
-            </div>
-          </div>
-        </a>
-        
+        </div>
+      </a>
+
         <!-- Trans Pride Initiative -->
-         <a class="card" >
+        <a class="card" href="tpi.html">
           <div class="image">
-            <img
-              src="assets/images/index/laTI.png"
-            />
+            <img src="assets/images/index/laTI.png" />
           </div>
           <div class="extra content">
-            <div class="header">TPI Speculative Redesign - Fall 2023</div>
+            <div class="header">TPI Speculative Redesign - Fall 2023 </br> Showcase </div>
             <div class="description">
-              Creating a speculative design for the Trans Pride Initiative as a class rebranding project. Coming soon!
+              Creating a speculative design for the Trans Pride Initiative as a class rebranding project.
             </div>
           </div>
         </a>
 
-        <!--         Sword in the Throne -->
-        <a class="card" href="swordinthethrone.html">
-          <div class="image">
-            <img
-              src="assets/images/index/laST.jpg"
-            />
-          </div>
-          <div class="extra content">
-            <div class="header">Sword in the Throne - Spring 2023</div>
-            <div class="description">
-              Creating a brand by combining two ideas and its accompanying
-              digital brand materials.
-            </div>
-          </div>
-        </a>
-        <!--         Alberian Blood -->
-        <a class="card" href="alberianblood.html">
-          <div class="image">
-            <img
-              src="assets/images/index/laAB.jpg"
-            />
-          </div>
-          <div class="extra content">
-            <div class="header">Alberian Blood - Spring 2023</div>
-            <div class="description">
-              A group fan project featuring characters from Dragalia Lost and
-              explorations in typography.
-            </div>
-          </div>
-        </a>
-
-        <!--         Gunk -->
-        <a class="card" href="gunk.html">
-          <div class="image">
-            <img
-              src="assets/images/index/laGU.jpg"
-              />
-          </div>
-          <div class="extra content">
-            <div class="header">GUNK - Hair and Skincare - Fall 2022</div>
-            <div class="description">
-              Creating a brand in the health and beauty industry that appeals to
-              newcomers to the space.
-            </div>
-          </div>
-        </a>
-       
-  </div>
-</div>
-
- 
-    <div class="ui vertical footer segment"></div>
-<div style="text-align:center;">
-  <h1a style=" color: #adfe52; font-size:3vw;">Project Archive</h1a>
-    
-</div>
-   
-<div class="gallery">
-  <div class="ui three doubling link cards grid">
-<!-- Flesh Poker -->
-<a class="card" >
-<div class="image">
-<img
-src="assets/images/index/laFP.png"
-/>
-</div>
-<div class="extra content">
-<div class="header">Cybertrash Poker Tournament - Spring 2024</div>
-<div class="description">
-An interactive poker expansion set, providing new tools for strategy and roleplay through the lens of a homunculus. Coming soon!
-</div>
-</div>
-</a>
-
- <!--         Type and Localization  -->
- <a class="card" href="typeandlocalization.html">
-  <div class="image">
-    <img
-      src="assets/images/index/laTL.jpg"
-    />
-  </div>
-  <div class="extra content">
-    <div class="header">Typography and Localization - Fall 2022</div>
-    <div class="description">
-      A short look into the differences in type design across languages through the logo designs in the game "Dragalia Lost."
-    </div>
-  </div>
-</a>
-
-  <!--         Gremlin Guide -->
-  <a class="card" href="gremlinguide.html">
-    <div class="image">
-      <img
-        src="assets/images/index/laGR.jpg"
-      />
-    </div>
-    <div class="extra content">
-      <div class="header">A Gremlin's Guide to UT - Fall 2022</div>
-      <div class="description">
-        An interactive experience and guidebook involving digging in dirt and becoming
-        your inner gremlin.
-      </div>
-    </div>
-  </a>
-
-
-     <!--         Farewell Alberia -->
-     <a class="card" href="farewellalberia.html">
-      <div class="image">
-        <img
-          src="assets/images/index/laFW.jpg"
-        />
-      </div>
-      <div class="extra content">
-        <div class="header">Farewell Alberia - Fall 2022</div>
-        <div class="description">
-          A collaborative zine celebrating the Dragalia Lost community,
-          featuring over 100 contributors.
+      <!-- The Distorted Legend of Le Loi -->
+      <a class="card" href="leloi.html">
+        <div class="image">
+          <img src="assets/images/index/laLL.png" />
         </div>
-      </div>
-    </a>
+        <div class="extra content">
+          <div class="header">The Distorted Legend of Le Loi - Fall 2023 </br> Showcase </div>
+          <div class="description">
+            A 4-piece screen and wood block print series depicting the tales of Vietnam and the legendary Lê Lợi.
+          </div>
+        </div>
+      </a>
 
-</div>
-</div>
+          <!-- The Distorted Legend of Le Loi -->
+          <a class="card" href="RRK.html">
+            <div class="image">
+              <img src="assets/images/index/laRRK.png" />
+            </div>
+            <div class="extra content">
+              <div class="header">RRK Wood Type Residency - Summer 2023 </br> Showcase </div>
+              <div class="description">
+                A summer residency where I worked with and created 4 editions of 90 prints using the Rob Roy Kelly Wood Type Collection.
+              </div>
+            </div>
+          </a>
 
+    
 
+      <!--         Sword in the Throne -->
+      <a class="card" href="swordinthethrone.html">
+        <div class="image">
+          <img src="assets/images/index/laST.jpg" />
+        </div>
+        <div class="extra content">
+          <div class="header">Sword in the Throne - Spring 2023 </br> Showcase </div>
+          <div class="description">
+            Creating a brand by combining two ideas and its accompanying
+            digital brand materials.
+          </div>
+        </div>
+      </a>
+      <!--         Alberian Blood -->
+      <a class="card" href="alberianblood.html">
+        <div class="image">
+          <img src="assets/images/index/laAB.jpg" />
+        </div>
+        <div class="extra content">
+          <div class="header">Alberian Blood - Spring 2023 </br> Showcase </div>
+          <div class="description">
+            A group fan project featuring characters from Dragalia Lost and
+            explorations in typography.
+          </div>
+        </div>
+      </a>
 
-
-  </body>
-  <footer>
-    <div class="footer">
+      <!--         Gunk -->
+      <a class="card" href="gunk.html">
+        <div class="image">
+          <img src="assets/images/index/laGU.jpg" />
+        </div>
+        <div class="extra content">
+          <div class="header">GUNK - Hair and Skincare - Fall 2022 </br> Process Blog </div>
+          <div class="description">
+            Creating a brand in the health and beauty industry that appeals to
+            newcomers to the space.
+          </div>
+        </div>
+      </a>
 
     </div>
-<!--[if IE]>
+  </div>
+
+
+  <div class="ui vertical footer segment"></div>
+  <div style="text-align:center;">
+    <h1a style=" color: #adfe52; font-size:3vw;">Project Archive</h1a>
+
+  </div>
+
+  <div class="gallery">
+    <div class="ui three doubling link cards grid">
+      <!-- Flesh Poker -->
+      <a class="card">
+        <div class="image">
+          <img src="assets/images/index/laFP.png" />
+        </div>
+        <div class="extra content">
+          <div class="header">Cybertrash Poker Tournament - Spring 2024 </br> Showcase </div>
+          <div class="description">
+            An interactive poker expansion set, providing new tools for strategy and roleplay through the lens of a
+            homunculus. Coming soon!
+          </div>
+        </div>
+      </a>
+
+      <!--         Type and Localization  -->
+      <a class="card" href="typeandlocalization.html">
+        <div class="image">
+          <img src="assets/images/index/laTL.jpg" />
+        </div>
+        <div class="extra content">
+          <div class="header">Typography and Localization - Fall 2022 </br> Showcase </div>
+          <div class="description">
+            A short look into the differences in type design across languages through the logo designs in the game
+            "Dragalia Lost."
+          </div>
+        </div>
+      </a>
+
+      <!--         Gremlin Guide -->
+      <a class="card" href="gremlinguide.html">
+        <div class="image">
+          <img src="assets/images/index/laGR.jpg" />
+        </div>
+        <div class="extra content">
+          <div class="header">A Gremlin's Guide to UT - Fall 2022 </br> Process Blog </div>
+          <div class="description">
+            An interactive experience and guidebook involving digging in dirt and becoming
+            your inner gremlin.
+          </div>
+        </div>
+      </a>
+
+
+      <!--         Farewell Alberia -->
+      <a class="card" href="farewellalberia.html">
+        <div class="image">
+          <img src="assets/images/index/laFW.jpg" />
+        </div>
+        <div class="extra content">
+          <div class="header">Farewell Alberia - Fall 2022 </br> Showcase </div>
+          <div class="description">
+            A collaborative zine celebrating the Dragalia Lost community,
+            featuring over 100 contributors.
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+
+
+
+</body>
+<footer>
+  <div class="footer">
+
+  </div>
+  <!--[if IE]>
   <script src="./oneko-ie6.js"></script>
 <![endif]-->
-<!--[if !IE]><!-->
+  <!--[if !IE]><!-->
   <script src="./oneko.js"></script>
-<!--<![endif]-->
-  </footer>
+  <!--<![endif]-->
+</footer>
+
 </html>
