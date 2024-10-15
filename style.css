@@ -84,6 +84,10 @@ body {
   margin-bottom: 20px;
 }
 
+b2{
+  color: #adfe52;
+}
+
 .projectOverview {
   font-size:20px;
 }
@@ -181,7 +185,7 @@ p3h {
 }
 
 p4 {
-  font-size: 16px;
+  font-size: 18px;
   font-family: bahn, sans-serif;
   font-weight: normal;
   color: #ffffff;
@@ -315,7 +319,7 @@ p5 {
   padding-left:20vw;
   padding-right:20vw;
   text-indent:10px;
-  padding-top:20px;
+  padding-top:10px;
   align-items: center;
 }
 
@@ -351,28 +355,7 @@ p5 {
   height: 100px;
 }
 
-@media only screen and (max-width: 1200px) {
-  .break {
-    height: 10px;
-  }
 
-  .projectDetails {
-    flex-wrap: wrap;
-    padding: 0px 5vw 40px 0px;
-  }
-
-  .sideImage {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-left:0vw;
-    padding-right:0vw;
-    text-indent:10px;
-  }
-
-
-
-}
 
 .hero2 {
   max-width:40vw;
@@ -403,13 +386,38 @@ img {
 
 .banner {
   display: block;
-  max-width:80vw;
-  max-height:80vh;
+  max-width:75vw;
+  max-height:75vh;
   width: auto;
   height: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   padding-left: 0vw;
+  border-radius:10px;
+}
+
+.banner2 {
+  display: block;
+  max-width:40vw;
+  max-height:60vh;
+  width: auto;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding-left: 0vw;
+  border-radius:10px;
+}
+
+.banner3 {
+  display: block;
+  max-width:60vw;
+  max-height:12vh;
+  width: auto;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding-left: 0vw;
+  border-radius:10px;
 }
 
 .imageTall {
@@ -420,12 +428,23 @@ img {
 
 .paragraph {
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   padding-right: 20vw;
   padding-top: 10px;
   padding-bottom:10px;
   text-indent: 20px;
-  line-height: 125%;
+  line-height: 150%;
+  padding-left: 10vw;
+}
+
+.paragraph2 {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding-right: 20vw;
+  padding-top: 10px;
+  padding-bottom:10px;
+
+  line-height: 150%;
   padding-left: 10vw;
 }
 
@@ -434,12 +453,60 @@ aside {
   text-indent: 20px;
   padding-left: 2vw;
 }
-
+aside2 {
+  padding-right: 2vw;
+  text-indent: 5px;
+  padding-left: 2vw;
+}
 
 
 .ui.menu .ui.dropdown .menu > .item {
   font-weight: bold !important;
 }
+
+
+@media only screen and (max-width: 1200px) {
+  .break {
+    height: 10px;
+  }
+
+  .projectDetails {
+    flex-wrap: wrap;
+    padding: 0px 5vw 40px 0px;
+  }
+
+  .sideImage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left:0vw;
+    padding-right:0vw;
+    text-indent:10px;
+  }
+
+  
+  .banner2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width:80%;
+  }
+  
+  .banner3 {
+    display: block;
+    max-width:60vw;
+  max-height:15vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+}
+
 
 @media only screen and (max-width: 640px) {
 
@@ -451,7 +518,29 @@ aside {
     margin-bottom: 20px;
     max-width:100%;
   }
+
+  .banner2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width:100%;
+  }
+
+  .banner3 {
+    display: block;
+    max-width:60vw;
+  max-height:15vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   .paragraph {
+    padding-right: 5vw;
+  }
+  .paragraph2 {
     padding-right: 5vw;
   }
   .hero2 {
