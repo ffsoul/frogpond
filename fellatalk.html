@@ -1,31 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%">
 
 <head>
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!--
-      This is the page head - it contains info the browser uses to display the page
-      You won't see what's in the head in the page
-      Scroll down to the body element for the page content
-
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
-
     <title>Kenny's Frog Pond</title>
     <link rel="shortcut icon" type="image/png" href="assets/images/index/Logo.png" />
 
     <!-- Meta tags for SEO and social sharing -->
     <link rel="canonical" href="https://kennycly.com/" />
-    <meta name="description" content="Kenny Ly - Designer, Artist, and Frog Enthusiast" />
+    <meta name="description" content="Kenny Ly - Graphic Artist - Design Researcher  - Professional Shenanniganizer" />
     <meta name="robots" content="index,follow" />
     <meta property="og:title" content="Kenny's Frog Pond" />
     <meta property="og:type" content="portfolio" />
     <meta property="og:url" content="https://kennycly.com" />
-    <meta property="og:description" content="Kenny Ly - Designer, Artist, and Frog Enthusiast" />
+    <meta property="og:description"
+        content="Kenny Ly - Graphic Artist - Design Researcher  - Professional Shenanniganizer" />
     <meta property="og:image" content="assets/images/index/LogoHD.png" />
 
     <!--     <link rel="stylesheet" href="https://unpkg.com/98.css" /> -->
@@ -35,16 +27,16 @@
     <link rel="stylesheet" href="style.css" />
 
     <!--     Import the webpage's script -->
-    <script src="/script.js" defer></script>
+    <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
         integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="autofroggy.js" defer></script>
     <link rel="stylesheet" href="woah.css" />
 </head>
 
-<body>
-    <!--Top Menu -->
+<<!--Top Menu -->
     <div class="ui top fixed menu">
         <a class="item" href="index.html">
             <img style="width: 4.5vh" src="assets/images/index/Logo.png" />
@@ -53,22 +45,31 @@
         <div class="right menu">
             <a class="item" href="index.html">Home</a>
             <div class="ui simple dropdown item">
-                Workshop
+                Graphic Design
                 <i class="dropdown icon"></i>
                 <div class="menu">
-                    <a class="item" href="classprojects.html">Class Projects</a>
-                    <a class="item" href="clientwork.html">Client Work</a>
+                    <a class="item" href="gunk.html">GUNK - Hair and Skincare</a>
+                    <a class="item" href="alberianblood.html">Alberian Blood</a>
+                    <a class="item" href="tpi.html">TPI Speculative Redesign</a>
+                    <a class="item" href="everlost.html">Everlost</a>
+                    <a class="item" href="leloi.html">The Distorted Legend of Le Loi</a>
+                    <a class="item" href="RRK.html">RRK Wood Type Residency</a>
+                    <a class="item" href="swordinthethrone.html">Sword in the Throne</a>
+                    <a class="item" href="illustration.html">Illustrative Typography</a>
+
                 </div>
             </div>
             <div class="ui simple dropdown item">
-                Playground
+                Interaction Design
                 <i class="dropdown icon"></i>
                 <div class="menu">
-                    <a class="item" href="artwork.html">Artwork</a>
-                    <a class="item" href="modeling.html">Modeling</a>
-                    <a class="item" href="prints.html">Prints</a>
+                    <a class="item" href="fellatalk.html">Let's Talk Fellas</a>
+                    <a class="item" href="gremlinguide.html">A Gremlin's Guide to UT</a>
+                    <a class="item" href="visinquiries.html">The Grand Naruhodo Count</a>
+                    <a class="item" href="aifindings.html">Me and the Machine</a>
                 </div>
             </div>
+
             <a class="item" href="about.html">About</a>
 
         </div>
@@ -84,32 +85,24 @@
             <br />
             <div class="detailGridBody">
                 <p4>
-                    Currently, past our freshman year of the design program, the design cohort at UT Austin has become
-                    incredibly divided as we explore different aspects of design, with our work ending up forgotten
-                    about beyond the period of the class. My goal was to explore the role of grassroots organizations in
-                    developing a propensity to share current and past work outside of class contexts for feedback and
-                    critique, using the UT design cohort for small-scale tests. Through the use print as an artifact and
-                    print as an activity, I conducted various user tests and workshops over the semester to discover how
-                    print can be used to encourage the sharing of work or as a vessel of discussion. A final document
-                    was created to share the ideas that I learned on a broader spectrum that others could take and apply
-                    to their own communities.
+                    A community building study looking into how micro-communities form and function within a design
+                    critique and stamp carving framework.
                 </p4>
                 <br />
             </div>
         </div>
-        <div class="detail">
+        <div class="detail" style="  margin: 30px 200px 10px 10px;">
             <p3h> details </p3h>
             <div class="detailGridBody">
                 <p4>
                     <div style="font-weight: bold; font-size: 22px; margin-top: 5px">
                         Tools
                     </div>
-                    Illustrator, Indesign, Clip Studio Paint
+                    Illustrator, InDesign, Clip Studio Paint
                     <div style="font-weight: bold; font-size: 22px; margin-top: 5px">
                         deliverables
                     </div>
-                    Case Study<br />
-                    Fella Talk Meetings<br />
+                    Case Study, Meetings,
                     Fella Talk Booklet
                     <div style="font-weight: bold; font-size: 22px; margin-top: 5px">
                         time of completion
@@ -120,756 +113,710 @@
         </div>
     </div>
 
-    <p3 style=>an abridged guide to hosting your own Fella Talk and other miscellaneous collaborative activities</p3>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; padding-top:60px;"">
-    <iframe src=" https://drive.google.com/file/d/1NpsuJtAKZGTxDf0X7N3El75b5-xYr3SM/preview" width="640" height="860"
-        allow="autoplay"></iframe>
+    <img class="banner" src="assets/images/fellaTalk/largePlaceholder.png" />
+    <img class="banner" src="assets/images/fellaTalk/largePlaceholder.png" />
+
+    <p3>TLDR</p3>
+    <div class="paragraph" style="text-indent: 0px;">
+
+        <p4>
+            • Held multiple group studies to better understand user experience and interactions of a group and the
+            factors surrounding a meeting. </br>
+            • Consolidated findings into an informational booklet
+        </p4>
+    </div>
+    <p3>Takeaways</p3>
+    <div class="paragraph" style="text-indent: 0px;">
+        <p4>
+            • Taking feedback early on is incredibly valuable</br>
+            • The energy of the host has a strong impact on the overall success of an event.</br>
+            • Different archetypes of people may reveal themselves across meetings, affecting dynamics between
+            members.</br>
+        </p4>
+    </div>
+    <div style="text-align: center;">
+        <p3 style="padding-left: 0vw;">Fella Talk - The Book!</p3>
+    </div>
+
+
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; padding-top:60px;">
+        <iframe src=" https://drive.google.com/file/d/1NpsuJtAKZGTxDf0X7N3El75b5-xYr3SM/preview" width="640"
+            height="860" allow="autoplay"></iframe>
     </div>
     <br />
 
-    <div class="paragraph">
-        <p4>
-            To lay it out plainly, organizations set up by administration are inherently "less cool." I feel the
-            rigidity and importance of it all locks down chances to make deeper connections with others. As part of an
-            independent study with Cathryn Ploehn, I set out to study and define a "Fella Talk", my own version of what
-            a niche micro-organization should embody, and write a guide so others could learn how to structure the
-            communities they wanted to hold.
-        </p4>
+    <img class="banner2" src="assets/images/fellaTalk/banner1.png" />
+    <div style="text-align: center; margin-bottom:20px;">
+        <p4 style="padding-left: 0vw;color:#d1cbbb; font-size:16px;"> Researching how to connect with my peers in the UT
+            Austin Design Cohort. </br> <i>Where are my Fellas?</i></p4>
     </div>
 
-    <p3>"Where are my Fellas?"</p3>
+
     <p4>
         <div class="paragraph">
-            I thought about this a lot over the last 2 semesters. After I got to know everyone in my year in the intro
-            design classes, the student base split to focus on specific design roles or worked toward a minor. This was…
-            kind of a shame really since I think good design revolves around getting a good group of buddies who know
-            you well enough to critique you properly. While there are those kinds of outspoken critics in most classes,
-            a lot of the time the class has mixed student years, leading to a hesitance to give stronger critique due to
-            unfamiliarity and differences in design skills. My strongest critiques have been from sitting with my
-            friends and “shooting the shit” because we all have a pre-established level of trust and respect with each
+
+
+            As we've studied at UT, my peers and I have had less time to connect as we have split off to study different
+            topics. This split has made classes less engaging and critique less helpful as I feel strong critiques come
+            from friends "shooting the shit" because we have a pre-established level of trust and respect with each
             other.
         </div>
-
         <div class="paragraph">
-            Moreover - classes sucked if there weren’t many people who I was already friends with. The design program’s
-            structure inadvertently separates people from their different design interests. With this and the chaotic
-            scheduling of design classes, I ended up not seeing many of my friends recently, and with the ones I did
-            see, I would only see brief glimpses of their work. And man was this socially isolating.
-
-        </div>
-
-        <div class="paragraph">
-            Some attempts to gather students in the past had mixed results. Our chapter of AIGA felt too large for close
-            discussion. The Friendsgiving Potlucks I held were too grand to hold consistently. What I wanted was a
-            regularly meeting small group that could meet up and just talk - about designs we worked on, the program,
-            whatever really. Something low-key and low-stress just to make it feel more intimate than some of the larger
-            organizations. With all of this, I decided to focus this study on developing the “grassroots small
-            community” idea that I yearned for, so that I could make a space to share design work and set time aside to
-            just talk with my fellas. A “Fella Talk” if you will.
-
-
-        </div>
-
-        <div class="paragraph">
-            I did want to include my current obsession with print into this somehow, and in the most superficial way to
-            explain it, “i thought it would be pretty neat, lol,” (which would come to bite me in the butt when fleshing
-            this idea out). While I do HEAVILY enjoy using technology, there is beauty in interacting with a physical
-            object. My time drawing art and my summer working on the RRK Folio and Personal Project Residency would grow
-            my love for creative print work that I wanted to share. Despite our program having an entire printing lab
-            and classes revolving around it, most others never really touched it which I think is a missed opportunity
-            and a massive bummer.
-
-
-        </div>
-
-        <div class="paragraph">
-            It’s important to note that I take the perspective of a self-proclaimed “Most Extroverted Introvert”, with
-            most of my time spent locked away in my room. I sometimes go out, but for the most part, I don’t do much
-            with others outside of class, so I had socially regressed in the past year. Not wanting to stay a hermit, I
-            treated this independent study as an unapologetic excuse to hang out with my friends and learn more about
-            what makes a hangout fulfilling.
-
-        </div>
-    </p4>
-
-    <p3>Dawn of the Fellas</p3>
-    <p4>
-        <div class="paragraph">
-            <u><b> Research </b></u>
+            Some attempts were made to bring students together in our cohort, but they were unsuccessful due to their
+            rigid, work-like structures. In layman's terms, these meetings felt "too lame" to attend as they didn't feel
+            like reprieve to our normal schedules.
         </div>
         <div class="paragraph">
-            For this independent study, I proposed using print as an artifact and print as an activity to help foster
-            communication. However, I couldn’t figure out how to merge these ideas with a critique session, without
-            multitasking and losing sight of my goal.
-
-        </div>
-
-        <img class="banner" src="assets/images/fellaTalk/MultiTrackDrifting.webp" />
-
-        <div class="paragraph">
-            I had my first check-in with Professor Ploehn, my mentor for this independent study, where I discussed my
-            readings and overall project goals. As a base, I wanted to plan meetings around notable points of collective
-            pain and suffering in the year to provide a chance to unwind. I had a rough schedule planned out, but I was
-            recommended to run a crappy low-stakes meeting to see what I could air out before settling on my structure.
-            Notably, Professor Ploehn suggested running this meeting without the print component, so I could figure out
-            how to mesh it together. Keeping this advice in mind, I set out to create this community with my first step
-            - gathering the members.
-
-
+            As part of an Independent Study course, I held meetings with several of my peers over the semester to learn
+            what makes a meeting fun and not an obligation, and to avoid the "corporate lameness" of
+            university-proctored events.
         </div>
         <div class="paragraph">
-            <u><b> Gathering People </b></u>
-        </div>
-
-        <img class="banner" src="assets/images/fellaTalk/ArtOfGathering.jpg" />
-
-        <div class="paragraph">
-            The Art of Gathering by Priya Parker brings the concept of “Bobs'' in a community. Bobs aren’t actively
-            antagonistic, instead just existing within the group. However, by just existing in the space, they detract
-            from the group experience since each person has to stretch their attention out to an extra member who they
-            might not be particularly interested in. Aware of this, I decided to go with a suggested size of 6 people
-            for my curated group of fellas. Having more people could be nice, but there was the looming risk of
-            critiques going too long and stretching the experience to boredom.
-
-
-
-        </div>
-
-        <div class="paragraph">
-            I started sending messages to my friends to see if they were interested. There was a weird, almost imposter
-            syndrome-like feeling when reaching out like this. “Who was I to be trying to make this group?” “Were people
-            responding just because they wanted to help me with my projects” While I can’t deny there isn’t a tilted
-            dynamic with me as the host and researcher that makes the experience “less genuine”, it’s a tough hurdle
-            that one person needs to jump over so that groups can form, instead of constantly waiting for something to
-            start up.
-
-        </div>
-
-        <div class="paragraph">
-            I soon ran into my next problem - design student schedules are a pain to work around and left only a few
-            time slots to meet. I settled with Thursday as I was hoping the meets would serve as a nice end cap to
-            people’s school weeks, but this experience showed one of the big hurdles of organization. Even if everyone
-            was willing, it adds on to the host’s work. I had wanted to include other activities, but because of the
-            time constraints, I only had an hour and a half to work with.
-
-
-        </div>
-
-        <div class="paragraph">
-            In the end, I gathered 5 other people with an assortment of design interests and print experiences to be a
-            part of this initial group of fellas. Avery, Nhu, Chan, Salma, Abraham, and last but not least - Me.
-
-
-        </div>
-    </p4>
-
-    <p3>Fella Preppin'</p3>
-    <p4>
-
-        <div class="paragraph">
-            In her book, Priya says that a gathering has started before everyone has even met up. The expectations
-            surrounding the gathering excite people for what could come next and can have a great impact on how the rest
-            of the event goes. This idea goes down to the root of a gathering - the invitation. I think physical
-            invitations are special; they serve as memories of events in ways similar to movie tickets or commemorative
-            photos. Digital invites, while convenient, just don’t hold the same value. Wanting to get my hands dirty
-            with some designing, I went ahead and drafted an invite that would set the tone for my meetings.
-
-        </div>
-
-        <img class="banner" style="width:50vw;" src="assets/images/fellaTalk/FellaTalkInvite.png" />
-
-
-        <div class="paragraph">
-            The overall goal of the meetings was to make time to chill and share work. There was time to be students
-            during critique, but ultimately I wanted people to loosen up from their busy schedules. To channel this
-            energy into the invite, I decided to draw out the entire invite by hand like a crappy kid’s doodle.
-        </div>
-
-        <div class="paragraph">
-            The entire invite design process boiled down to spur-of-the-moment, “what I thought was most fun” decisions,
-            of course with some consideration of layout and hierarchy to make sure information was conveyed clearly.
-            Even the name, “Fella Talk”, was something that just came to me. It was something that just sounded stupid,
-            which in combination with the rest of the invite made the tone of these talks clear. Something like
-            “Critique and Printing Workshop” would give off a completely different and serious idea for the meeting.
-            Fella Talk’s goal was to be an “injection of stupidity” into the design student life where we could take a
-            break from the structure of classes.
-        </div>
-        <div class="paragraph">
-            Next, Fella Talk needed a place to meet. I had considered empty classrooms, but I avoided them as they had a
-            “serious and clinical energy”, which went against the casual nature of my event. I instead looked towards
-            our university’s Design Lab. It was one of the most “designery” spaces on campus and was much more inviting,
-            partly because the room had natural daylight and plants. The lab was also more familiar and accessible from
-            all around campus since people had classes in the same building. With the base structure finalized, I
-            printed out my invites and handed them out to the members.
-        </div>
-
-        <div class="paragraph">
-            Members seemed to appreciate being handed a physical invitation, and were surprised that they were receiving
-            something before the event had even started. With this, Fella Talk 0.5 was on track to begin.
-        </div>
-    </p4>
-
-    <p3>Pre-Fella Observations</p3>
-    <p4>
-
-        <div class="paragraph">
-            Fella Talk 0.5 had rolled up. As I was finishing up work, the fellas made their way into our designated
-            meeting space. One person was missing and after a few minutes passed, I eventually decided to call it and
-            start the meeting a few minutes after scheduled. This meeting was focused on getting input for future
-            meetings, so I wasn’t too concerned. With the fellas already mingling, I got ready to begin.
-        </div>
-
-        <div class="paragraph">
-            <u><b> Space </b></u>
-        </div>
-
-        <div class="paragraph">
-            This day in the lab was particularly empty. Since we wouldn’t be printing and were just discussing group
-            norms going forward, I didn’t deem it too necessary to create an “alternate world” for people to enter.
-            Still, I made sure that everyone sat together at the edge of the table to try and close us off from the rest
-            of the lab.
-        </div>
-
-        <div class="paragraph">
-            <u><b> Fellas </b></u>
-        </div>
-
-        <div class="paragraph">
-            For critique, people were against always having to bring something to show, for a good reason - a lot of us,
-            including myself, weren’t taking many project-based courses so there would be periods where we could have
-            nothing to show. Ultimately, we decided that everyone didn’t need to present a work for critique, but I
-            still encouraged people to bring something to show.
-
-        </div>
-
-        <div class="paragraph">
-            The time needed for critique was also up for discussion. Since we were working in a tight timeframe, I
-            wondered if we needed a timer so that crits could be balanced evenly. However, members were against a timer,
-            saying how it could make them feel rushed. Instead, they suggested having an agenda out on the table for
-            everyone to see, taking the responsibility away from me as the timekeeper while still setting a time for
-            critique. This agenda would also help to set a clear purpose for the meeting, detailing what to expect from
-            the meetings so members wouldn’t be confused.
-
-        </div>
-
-        <div class="paragraph">
-            To help plan future meets, we decided it would be best to have some kind of group chat instead of me
-            scrambling to contact everyone individually. This would also help make the group feel more cohesive, even if
-            I still was the one scheduling the meetings. We landed on using Instagram as our platform of choice because
-            it offered a good mix of intimacy and level of engagement compared to other options like email or group
-            texts.
-
-        </div>
-
-        <div class="paragraph">
-            <u><b> Host </b></u>
-        </div>
-
-        <div class="paragraph">
-            I’m an expressive person, someone who makes themself known in a room, so obviously I gave everyone a strong
-            and warm welcome before immediately falling into one of Priya’s pitfalls mentioned in her book - boring
-            logistics talk. In the long run, this discussion was useful, but this was an incredibly stiff way to
-            introduce what was supposed to be a fun series of meetings. Regardless, the logistics were important. Though
-            I had a rough idea of how I wanted the gathering structure to go, I wanted input from the rest of the group
-            so that our Fella Talks could address what they wanted out of this community.
-
-        </div>
-
-        <div class="paragraph">
-            <u><b> Print </b></u>
-        </div>
-
-        <div class="paragraph">
-            Initially, I wanted to showcase a variety of printing methods so that we’d be doing something new each time.
-            However, the group had a mix of printers and non-printers which could create disinterest and force a
-            “teacher position” on them. Moreover, I would have to assume an even higher role as a lecturer, making this
-            event more of a class instead of a simple hangout. Through discussion, we decided to focus on a single,
-            simple form of print - linoleum block carving. It was an easy process that most people could pick up in a
-            few minutes and quick enough to where one could start and finish a block within our allotted 1-hour time
-            frame.
-
-        </div>
-
-        <img class="banner" src="assets/images/fellaTalk/fellatalkstampbook.png" />
-
-        <div class="paragraph">
-            With everything settled for now, it was time to end the meeting, and this meeting needed to end with a bang.
-            To commemorate this commencement of the fellas, I elaborately threw out stamp books for everyone. The books
-            had spots to stamp off when they came to meetings, and getting a stamp would serve as an informal send-off,
-            giving people the chance to leave early without disrupting the group dynamic. My hope with these books is
-            that it would drive a commitment to the group through a physical record of meetings, and would help to give
-            a memorable conclusion to each meet. As I stamped off everyone’s books, they all seemed excited to receive a
-            gift and eager to see what would come next as they headed home. Fella Talk 0.5 had come to a close and was a
-            great success in gathering information. Now, I just needed to implement this and wait for the next gathering
-            of the fellas…
-
+            The most important goal though was to have an excuse to get together, make cool stuff, and create memories.
+            If these meetings weren't fun, they lost their way. We were here to build our relationships as <b2>Fellas
+            </b2> and have fun just <b2>talking</b2>. A Fella Talk if you will.  
         </div>
 
     </p4>
 
-    <p3>It's Time for a Fella Talk!</p3>
+    <img class="banner2" src="assets/images/fellaTalk/banner2.png" />
+    <div style="text-align: center;">
+        <p4 style="padding-left: 0vw;color:#d1cbbb; font-size:16px;"> Research </br> <i>Funny Text Here</i></p4>
+    </div>
+
+    <img class="banner3" src="assets/images/fellaTalk/banner3.png" />
+    <div style="text-align: center;">
+        <p4 style="padding-left: 0vw;color:#d1cbbb; font-size:16px;"> Diving into texts and previous experiences to
+            learn more about the space of community design </br> <i>In-Depth Fella Analysis</i></p4>
+    </div>
+
     <p4>
 
-        <div class="paragraph">
-            With the .5 meeting done and the group's norms set, it was time to hold Fella Talk! We ended up having time
-            to hold 4 meetings throughout the year, and with these 3 meetings I learned plenty about group dynamics and
-            the many factors that affect them.
-
+        <div class="paragraph" style="margin-bottom: 2px; margin-top: 2px;">
+            My professor, Cat Ploehn, overlooked this project and suggested various readings to look into.
         </div>
-
-        <div class="paragraph">
-            <u><b> Space </b></u>
-        </div>
-
-        <div class="paragraph">
-            The issue with using public spaces to hold meetings is that they aren’t always accessible. Multiple times, I
-            had to move the talks to a different location because of space constraints. Fella Talk 1 was notable in that
-            I had to make the change right before we started since there was too much noise in the lab to hold a good
-            conversation.
-
-        </div>
-
-        <div class="paragraph">
-            Despite my best efforts, we would find ourselves in the classroom next door quite frequently. The lack of
-            windows, dim lighting, and spread out tables made the space feel uncomfortable. The tables in the room were
-            laid out in a U shape which separated the group the first time we used the room. Every time after, we made
-            sure to either push the tables closer or sit closer in every room we used.
-
-        </div>
-
-        <div class="paragraph">
-            There were times where we used the Design Lab in a busy environment, which did end up causing some
-            disturbances. Friends from outside the Fella Talk would sometimes chime in and become Bobs. While there
-            wasn’t much I could do with people hearing in, I was able to close off the table with a large box, creating
-            our own smaller space within the design lab.
-
-        </div>
-
-        <div class="paragraph">
-            Overall, we did the best with the spaces we had on campus, but it would have been better if we had our own
-            spot
-            to hold meetings. There are some other areas where we could reserve rooms for meetings across campus, but
-            they
-            didn’t have the supplies we needed for our activities so we were chained to the Art Building and Design Lab.
-        </div>
-
-        </div>
-
-
-        <div class="paragraph">
-            <u><b> Fellas </b></u>
-        </div>
-
-        <div class="paragraph">
-            I had chosen fellas who had all had at least some interactions with each other, with some being much closer
-            friends than others and me serving as the glue holding everyone together. Everyone always seemed excited
-            coming into meets. The first meet had everyone already sitting down and talking while I was setting up,
-            while at the subsequent meets, people would immediately start carving before everyone had arrived.
-        </div>
-
-        <div class="paragraph">
-            Critique sessions started out rough but would smooth over after the first few meetings. I had initially
-            planned for people to choose to share at the meets, but the first meeting proved that if we didn’t pre-plan,
-            we would quickly run out of time. Future meets would use our Instagram group chat to discuss who had
-            something to bring to the table so we could alot time to each presenter. With this change, critique ran much
-            smoother. There were points in discussion where 2 or 3 people seemed to dominate discussion which did lead
-            to us running short on time and having to cut to the next presenter.
-        </div>
-
-        <div class="paragraph">
-            There were multiple occasions where I had the chance to introduce an unfamiliar fella into the group. Nhu’s
-            and Chan’s friend had shown up to a meeting where I had initially denied them, but by the time we were
-            beginning to wrap up, I had brought them back in. It was clear that while some of the fellas were not put
-            off by the sudden new addition, they couldn’t connect to the unfamiliar friend in the same way as the fellas
-            they already knew.
-        </div>
-
-
-        <div class="paragraph">
-            There was another moment when Avery was unable to come, and as a last minute addition, I had invited Colin
-            to join for the day. Colin was unaware of the group norms and would frequently break away from the group
-            during carving sessions, as well as not having anything prepared for critique because of the
-            spur-of-the-moment decision. However, he did contribute a fair amount into discussion when he was engaged.
-        </div>
-
-        <div class="paragraph">
-            <u><b> Host </b></u>
-        </div>
-
-        <div class="paragraph">
-            While I tried to be as ready for Fella Talks as I could, sometimes my work from right before would leave me
-            disheveled as fellas were entering. It was the worst at the beginning of the year while people were still
-            learning about the lab for their classes, but over time I was eventually able to deal with it.
-
-        </div>
-
-        <img class="banner" src="assets/images/fellaTalk/FellaTalkAgenda.png" />
-
-        <div class="paragraph">
-            This time I would make sure to get attention early on with *THEATRICS* by dramatically handing out the new
-            Fella Agendas. Each agenda gave us all a rough schedule to follow so we would stay on track, without that
-            duty falling on one person’s shoulders. Underneath that was my surprise for the meeting, the ULTIMATE
-            ICE-BREAKER. These ice-breaker questions were all incredibly unserious and were to be used if one didn’t
-            have a project to share during critique, as an attempt to encourage people to bring their projects and a way
-            to keep people engaged if they didn’t have anything.
-
-        </div>
-
-        <div class="paragraph">
-            As the meetings progressed, I noticed that people waned away from using the Ice Breakers. Whether it was
-            because they had other things to talk about or didn’t want to say a silly statement, the Ice Breakers had
-            served their purpose well.
-
-        </div>
-
-        <div class="paragraph">
-            The theatrics are integral by the way. To keep the meeting from straying too far into feeling like an
-            extension of classes, I acted like my normal exaggerated self to make sure people knew this event wasn’t
-            serious. During intros and critiques, I did straighten up a bit just to help direct the flow of conversation
-            but again, nothing too serious.
-
-        </div>
-
-        <div class="paragraph">
-            <u><b> Print </b></u>
-        </div>
-
-        <div class="paragraph">
-            I had continued to create physical invites for the first few meetings since the reception was positive, but
-            after the first one, I found that people weren’t reading them fully. They appreciated the gesture as it made
-            them feel special but the content would sometimes be ignored. After a while, I ended up just switching to
-            digital invitations.
-        </div>
-
-        <div class="paragraph">
-            It was clear that everyone was highly eager to start carving once we finished critique. There was a bit of
-            futzing around with the tools at the first meeting, but after everyone had everything figured out, the
-            fellas got to carving right away. I had thought people would make small stamps, but people sprung to making
-            images that took up the full 4x6 block as opposed to the small stamps I thought people would prefer.
-        </div>
-
-        <div class="paragraph">
-            Carving blocks seemed to be incredibly enthralling to the fellas - they were all obsessed with finishing and
-            didn’t want to leave until they were done. I knew that people were interested in carving, but I did not
-            expect how much the fellas would be into the process. But soon, one by one they had to leave, signing
-            themselves out by getting their stamp books stamped (which some people always forgot). This act of print as
-            a closing ceremony really helped tie the entire event together and left people excited to come to the next
-            meeting and carve more.
-        </div>
-
-        <div class="paragraph">
-            <u><b> Post Meeting Analysis </b></u>
-        </div>
-
-        <div class="paragraph">
-            I don’t think I had it in me to host multiple groups. Just running one was making me worried if people were
-            enjoying themselves, so I wanted to focus my energy on making this one group successful. I was still open to
-            testing this community structure with other people though, maybe as a one-time experience to see if my
-            findings would transfer to a different group of people.
-        </div>
-
-        <div class="paragraph">
-            Reviewing my notes, there were definitely ways to improve the meetings. My main concern was about how people
-            felt during critique time, as it seemed that some people in the group were more prone to discussion than
-            others. I know that some of these fellas are more introverted, but was there anything I could do to
-            encourage them to open up more? To get more information, I turned to my fellas for some interviews.
-        </div>
-
-    </p4>
-
-    <p3>Fella Feedback and Reflections</p3>
-    <p4>
-
-        <div class="paragraph">
-            To figure out how to cater to my Fellas’ needs, I gave a few opportunities for feedback. This group wasn’t
-            meant to be run by me alone of course - What makes a community is input from everyone honed together by the
-            host.
-
-        </div>
-
-        <div class="paragraph">
-            <u><b> Space </b></u>
-        </div>
-
-        <div class="paragraph">
-            Everyone preferred the Design Lab over the classroom next door, no question. The entire room felt very
-            clinical and academic, taking away from the casual experience. The closed off space did allow for a sense of
-            secrecy and a chance for gossip but otherwise most would describe it as “depressing”.
-
-
-        </div>
-
-        <div class="paragraph">
-            Seating generally always took on a U shape since we usually had to stay at the edge of tables to not get in
-            the way of other people using the space. The classroom’s tables were notably not all together, which ended
-            up isolating the two halves of the room from connecting, and people preferred if we sat closer or moved the
-            tables. The design lab’s tables were already pushed together so it was perfect for us.
-        </div>
-
-        <div class="paragraph">
-            The classroom’s separation from outsiders did also help with not feeling overwhelmed or watched. Some fellas
-            expressed that coming in felt a bit hectic with some of the meets happening with many students working on
-            projects in the Design Lab.
-        </div>
-
-
-        <div class="paragraph">
-            <u><b> Fellas </b></u>
-        </div>
-
-        <div class="paragraph">
-            The fellas all had great fun. While there were some things that could be tweaked, they all said they enjoyed
-            themselves, which was reliving on my end.
-        </div>
-
-        <div class="paragraph">
-            I did notice some patterns in discussion forming where the group was divided between “talkers” and
-            “listeners”, essentially splitting the room in half sometimes. Nhu had self-identified as a talker and would
-            usually sit along with Avery and Abraham. On other hand, Chan, Salma, and I considered ourselves as
-            listeners. While everyone did enjoy themselves, the talkers would end up dominating a lot of the
-            conversation, which is in no way bad, but it did leave little opportunity for the listeners to pop in. There
-            were some fellas who were worried that they were disturbing others or not letting them speak enough, but for
-            the most part, it didn’t have a big impact during the meets.
-
-        </div>
-
-        <div class="paragraph">
-            A thought that was brought up in the interviews was the idea of platonic and professional relationships.
-            Everyone knew each other and could all call each other friends, but there was still a professional barrier
-            between some members as they would only interact with each other during classes.
-        </div>
-
-        <div class="paragraph">
-            <u><b> Host </b></u>
-        </div>
-
-        <div class="paragraph">
-            At a few points during the meetings, I had to leave the room during both the critique and carving sections.
-            Everyone reported that my sudden absence didn’t have a strong impact on the dynamic. Everyone was already
-            comfortable enough with each other to talk without needing me to guide them.
-        </div>
-
-        <div class="paragraph">
-            Once I noticed my status as a listener, a lot was revealed to me that I could have done better at as a host.
-            There were many times where I refrained from guiding the conversation because I didn’t want to interrupt
-            someone’s thought, even if we were starting to go overtime. As a host, there is definitely a need to push
-            out of my comfort zone and embody a “talker persona” to help guide conversation properly.
-        </div>
-
-
-        <div class="paragraph">
-            <u><b> Print </b></u>
-        </div>
-
-        <div class="paragraph">
-            Coming into the meets, everyone was already somewhat interested in print or had done it before, but I didn’t
-            expect how much people would be into it. Everyone unanimously agreed that the print aspect was their
-            favorite part of the meeting as it was just a time to talk while also having a fairly mindless activity to
-            recede into if they didn’t feel like always engaging in conversation. The final moments of each meet where
-            everyone would print copies of their carvings for each other were a notable highlight point.
-        </div>
-
-        <div class="paragraph">
-            People really appreciate being given physical invites at first, although interest in them seemed to wane the
-            further we went into the year. Nhu specifically was already biased against me since she already receives a
-            lot of printed work from me, so it seems printed material is best used as an initial hook. The printed
-            agendas were always appreciated though, making sure the meetings stayed on time.
-        </div>
-
-        <div class="paragraph">
-            <u><b> Henry Interview </b></u>
-        </div>
-
-        <div class="paragraph">
-            I also took the chance to interview our Design Lab Manager, Henry, about his experiences hosting his own
-            crit clubs. After graduating he and others found that they wanted to build a space for critique outside of
-            class, as well as just wanting an excuse and motivator to make cool things. Like the ideals I wanted to
-            embody in my Fella Talks, these were fairly small events between friends which held a balance of working
-            critique and relaxing social play.
-
-        </div>
-
-        <div class="paragraph">
-            <b> Misc. Tips from the Interview </b>
-        </div>
-
-        <div class="paragraph">
-            <aside>
-                - Projects shown were decided ahead of time to not waste time together
-            </aside>
-            <aside>
-                - Have guiding questions in mind to help conversation flow
-            </aside>
-            <aside>
-                - Don’t demand that everyone bring something - can lead to stress or lack of time
-            </aside>
-            <aside>
-                - Set the tone that critique should not be mean
-            </aside>
-        </div>
-
-
-        <div class="paragraph">
-            An important note I wanted to highlight was that the first-time host discomfort seemed to be a shared
-            experience. It’s a big task to start up a new community, but as time goes on you become more comfortable in
-            your role.
-
-        </div>
-
-    </p4>
-
-    <p3>Suddenly, New Fellas!</p3>
-    <p4>
-
-        <div class="paragraph">
-            Since the beginning, I wanted to run a second group of fellas, but I felt it would be too much for me to
-            coordinate considering how hard it was to find a good time for everyone at the first Fella Talk group - not
-            to mention the amount of carving blocks I’d have to buy. At some point, I ran this idea with my friend
-            Gabby, which led to running several one-off “Rando” Talks with random groups to see how applicable some of
-            my findings were to larger audiences. Would some of the structures set in place work within an uncontrolled
-            and unknowing group? Who knows? Let’s try it out.
-        </div>
-
-        <div class="paragraph">
-            <u><b> Space </b></u>
-        </div>
-
-        <div class="paragraph">
-            Rando Talks ended up being held in various places like the Design Lab during both on and off hours, as well
-            as Gabby’s exhibition space. Once again, the space definitely had an effect on the overall mood of the meet.
-            The design lab meetings felt a bit more formal, especially when we had other people around us in the lab. In
-            comparison, the exhibition space was closed off and dimly lit, making a relaxing and homely experience, like
-            a dinner by candlelight.
-        </div>
-
-
-
-        <div class="paragraph">
-            <u><b> Fellas </b></u>
-        </div>
-
-        <div class="paragraph">
-            Gabby took advantage of her social media to invite a wider variety of people to different time slots, with
-            each meeting having different fellas (and one person who ended up coming twice!) With it being near the end
-            of the year, the fellas were tired and didn’t feel like critique, nor did they respond to our messages
-            asking if they wanted critique in the days leading up to the talk.
-        </div>
-
-        <div class="paragraph">
-            Fellas were completely random, with many not knowing each other and even being completely different majors,
-            which was unexpected. The meets with a truly random assortment required me and Gabby to help proctor
-            discussion as people would often shy away from conversation. However, once people finished carving and got
-            to printing, they would begin to open up and show interest in each other’s work, often getting excited at
-            the first print reveal and trading prints with each other.
-        </div>
-
-        <div class="paragraph">
-            Fellas were completely random, with many not knowing each other and even being completely different majors,
-            which was unexpected. The meets with a truly random assortment required me and Gabby to help proctor
-            discussion as people would often shy away from conversation. However, once people finished carving and got
-            to printing, they would begin to open up and show interest in each other’s work, often getting excited at
-            the first print reveal and trading prints with each other.
-        </div>
-
-        <div class="paragraph">
-            <u><b> Host </b></u>
-        </div>
-
-        <div class="paragraph">
-            These talks were led by both me and Gabby with different levels of input, ranging from full input from me to
-            being completely hands off. Prior to the first meeting, I had provided a draft copy of my findings to Gabby,
-            but for the most part I let her lead how she wanted. My own hosting style relies on my personal energy which
-            I think Gabby tried to replicate but wasn’t able to fully get into it. She was still getting into the
-            first-time host role as well, adding onto a bit of the awkwardness.
-        </div>
-
-        <div class="paragraph">
-            <u><b> Print </b></u>
-        </div>
-
-        <div class="paragraph">
-            Due to time constraints, Gabby also ended up using my agendas and invites as templates. From the get go,
-            invites were digital since we didn’t have the ability to hand out physical invites before the meets. With
-            Gabby as the host, I do think there was a bit of a missed opportunity to take in her own design styles in an
-            invite and see how different presentations could affect attendee mood.
-        </div>
-
-        <div class="paragraph">
-            At all Rando Talks, it took a bit but after everyone was settled down and carving, they REALLY went at it.
-            Block carving served as a perfect conduit for casual discussion and relaxation across all of my talks as it
-            allowed people to zone out and chat. If anything should be taken from what I’ve learned, it’s this. People
-            go absolutely BONKERS for printing.
+        <div class="paragraph" style="margin-bottom: 2px; margin-top: 2px;">
+            <aside> • The Art of Gathering </aside>
+            <aside> • Community: The Structure of Belonging </aside>
+            <aside> • Microsolidarity </aside>
         </div>
     </p4>
 
-    <p3>Farewell, My Fellas</p3>
+
+    <div class="sideImage">
+        <div style="padding: 20px 10px 0px 10px;  text-indent: 0px; max-width: 45%;">
+            <p4 style="  line-height: 150%;">
+                <div style="margin-bottom: 20px; margin-top: 2px;">
+                    <b> The Art of Gathering, by Priya Parker served as a guiding text during this project. The book
+                        introduced me to many topics to experiment with such as: </b>
+                </div>
+                Host - How does a host's messages affect the perception and memory of a meeting? </br>
+                Venue - How does the layout and "mood" of the room affect the meeting? </br>
+                Purpose - How does the purpose guide the activity? </br>
+                People - How do different levels of engagement from guests affect each other? </br>
+            </p4>
+        </div>
+        <div style="padding: 20px 10px 0px 10px;text-indent: 0px; max-width: 45%; ">
+            <p4 style="line-height: 150%;">
+                <div style="margin-bottom: 20px; margin-top: 2px;">
+                    <b> I also interviewed my lab manager Henry, as he had experience holding a similar critique based
+                        event. </b> </br>
+                </div>
+                • Decide on projects ahead of time to not waste time together </br>
+                • Provide guiding questions to assist conversation flow </br>
+                • Don't demand that everyone brings something to show, can lead to stress or lack of time </br>
+                • Set the tone that critique should not be mean </br>
+            </p4>
+        </div>
+
+    </div>
+
+
+
+    <img class="banner3" src="assets/images/fellaTalk/banner4.png" />
+    <div style="text-align: center;">
+        <p4 style="padding-left: 0vw;color:#d1cbbb; font-size:16px;"> Running a low-fidelity version of the meeting to
+            gather information from members </br> <i>Gathering the Fellas</i></p4>
+    </div>
+
+    <p4>
+
+        <div class="paragraph">
+            Professor Ploehn recommended for me to hold a Low-Fidelity meeting without any of the components I wanted to
+            test so I could gauge user interest from my members. After all, if I ran activities that only I was
+            interested in, this gathering wouldn't be equal or fun.
+        </div>
+
+        <div class="paragraph2">
+            <b2>Structure Discussion</b2> - The first structure of Fella Talk involved a critique round table where
+            everyone presents work, and a printing demo to create a new stamp for the week.  This way, I thought I could
+            provide an equal experience to everyone, while also making it worthwhile as a learning experience.
+        </div>
+
+        <div class="paragraph2">
+            <b2>Critique</b2> - The main concern with the critique portion was that people wouldn't always have work to
+            show. In addition, we only had 1.5 hours to hold our meetings which wasn't enough time to go through even
+            just six people. Following Henry's advice and fella feedback, we shifted to announcing work to present ahead
+            of time in a group chat, and asked that members contribute to discussions but didn't demand a showcase.
+        </div>
+
+        <div class="paragraph2">
+            <b2>Print</b2> - Half of the fellas that I had selected had already learned most of the print lessons I
+            wanted to show, while the others had barely touched the lab. This created a power imbalance with some
+            members inevitably turning to teaching roles for those not in the know. As a suggestion by members, we
+            instead focused on a relatively simple printing method - stamp block carving. This method was fairly easy to
+            learn, low-cost, and quick to clean up, which fit into the structure of our proposed meeting nicely.
+        </div>
+    </p4>
+
+    <img class="banner" src="assets/images/fellaTalk/diagram1.png" />
+
+    <div class="sideImage">
+        <div style="padding: 0px 50px 0px 50px;  text-indent: 0px; ;">
+            <img class="banner" style="max-height: 60vh;" src="assets/images/fellaTalk/sidePlaceholder.png" />
+        </div>
+        <div style="padding: 0px 10px 0px 10px; text-indent: 0px; ; ">
+            <p4 style="line-height: 150%;">
+                <div style="margin-bottom: 20px; margin-top: 2px;">
+                    <p3h>
+                        <b2> Theme - Purpose</b2>
+                    </p3h>
+                </div>
+                <div style="padding-bottom: 10px;">
+                    A <b2>clear purpose</b2> is key for a meeting's success. Having one lets members know what to expect
+                    so
+                    they aren't blindsided by unrelated activities, and can hold you accountable as a host. You <b2>
+                        should
+                        not multitask</b2> as it dilutes the reason for meeting and can lead to spreading yourself too
+                    thin
+                    across ideas.
+                </div>
+                <div style="padding-bottom: 10px;">
+                    It helps to identify <b2>core values</b2> or a <b2>guiding question</b2> to stay on topic while
+                    holding
+                    meetings. "We want to make space for strong critique and have time to hang out" drives my own
+                    meetings.
+                </div>
+        </div>
+
+    </div>
+
+    <p4>
+
+        <div class="paragraph">
+            Through this introductory meeting, I drafted a new version of the meeting that supported my and my
+            participants' ideas.
+        </div>
+    </p4>
+
+    <img class="banner" src="assets/images/fellaTalk/diagram2.png" />
+
+    <img class="banner2" src="assets/images/fellaTalk/banner5.png" />
+    <div style="text-align: center;">
+        <p4 style="padding-left: 0vw;color:#d1cbbb; font-size:16px;"> Testing </br> <i>Funny Text Here</i></p4>
+    </div>
+
+    <img class="banner3" src="assets/images/fellaTalk/banner6.png" />
+    <div style="text-align: center;">
+        <p4 style="padding-left: 0vw;color:#d1cbbb; font-size:16px;"> Creating a strong start before meetings begin to
+            establish expectations</br> <i>Calling all Fellas!</i></p4>
+    </div>
+
     <p4>
         <div class="paragraph">
-            With that, my Fella Talks had concluded for the semester. I had completed my goals with great success. Print
-            as an artifact was made with the invites, agendas, and stamp books. Print as an activity was made through
-            our carving and stamping sessions. Most importantly, my excuse to hang out with my friends had paid off. It
-            was time to take a long deserved break…
+            From The Art of Gathering, an event starts before it has begun. A proper invitation serves to inform guests
+            what is happening and how they should prepare themselves.
+        </div>
+    </p4>
 
+    <div class="sideImage">
+        <div style="padding: 0px 10px 0px 10px; text-indent: 0px; ; ">
+            <p4 style="line-height: 150%;">
+                <div style="margin-bottom: 20px; margin-top: 2px;">
+                    <p3h>
+                        <b2>Experiment - Physical vs. Digital Invitations
+                        </b2>
+                    </p3h>
+                </div>
+                Over the several Fella Talks I held, I tested different invitation methods. The physical invitation
+                cards I started with were well received early on, with users saying it elevated the experience of the
+                early meetings. However, as the meetings progressed, it seemed that the novelty had worn off and it was
+                easier to inform everyone through a digital invitation instead. In addition, any changes could be sent
+                out immediately instead of through individual physical messages.
         </div>
 
+        <div style="padding: 0px 50px 0px 50px;  text-indent: 0px; ;">
+            <img class="banner" style="max-height: 60vh;" src="assets/images/fellaTalk/sidePlaceholder.png" />
+        </div>
+    </div>
+
+    <div class="sideImage">
+        <div style="padding: 0px 50px 0px 50px;  text-indent: 0px; ;">
+            <img class="banner" style="max-height: 60vh;" src="assets/images/fellaTalk/sidePlaceholder.png" />
+        </div>
+        <div style="padding: 0px 10px 0px 10px; text-indent: 0px; ; ">
+            <p4 style="line-height: 150%;">
+                <div style="margin-bottom: 20px; margin-top: 2px;">
+                    <p3h>
+                        <b2> Theme - Tone</b2>
+                    </p3h>
+                </div>
+                What tone or mood a host gives off at and before an event will influence how guests will interact in
+                response. Indicating this on invitations helps to ease people into an expectation of what's to come,
+                rather
+                than being surprised by an event that's more casual/formal than they thought.
+        </div>
+    </div>
+
+    <div class="sideImage">
+        <div style="padding: 0px 50px 0px 50px;  text-indent: 0px; ;">
+            <img class="banner" style="max-height: 60vh;" src="assets/images/fellaTalk/sidePlaceholder.png" />
+        </div>
+        <div style="padding: 0px 10px 0px 10px; text-indent: 0px; ; ">
+            <p4 style="line-height: 150%;">
+                <div style="margin-bottom: 20px; margin-top: 2px;">
+                    <p3h>
+                        <b2> Theme - Venue</b2>
+                    </p3h>
+                </div>
+                <div>
+                    A meeting's venue also directly feeds into the tone. All venues have associations connotations, such
+                    as
+                    classrooms as a place for study, or parks for a place of relaxation. A venue that is dissonant with
+                    the
+                    intended tone can cause initial discomfort as guests need to adjust themselves into a fitting
+                    headspace for
+                    the meeting, rather than one fitting of the space.
+                </div>
+        </div>
+    </div>
+
+    <img class="banner3" src="assets/images/fellaTalk/banner7.png" />
+    <div style="text-align: center;">
+        <p4 style="padding-left: 0vw;color:#d1cbbb; font-size:16px;"> Starting meetings off strong with a proper opening
+            to bring energy and excitement</br> <i>Welcome my Fellas!</i></p4>
+    </div>
+
+    <p4>
+
         <div class="paragraph">
-            And work on Fella Talk: The Book!
+            From The Art of Gathering, an event starts before it has begun. A proper invitation serves to inform guests
+            what is happening and how they should prepare themselves.
+        </div>
+    </p4>
+
+    <div class="sideImage">
+        <div style="padding: 0px 50px 0px 50px;  text-indent: 0px; ;">
+            <img class="banner" style="max-height: 60vh;" src="assets/images/fellaTalk/sidePlaceholder.png" />
+        </div>
+        <div style="padding: 0px 10px 0px 10px; text-indent: 0px; ; ">
+            <p4 style="line-height: 150%;">
+                <div style="margin-bottom: 20px; margin-top: 2px;">
+                    <p3h>
+                        <b2> Theme - Host Energy
+                        </b2>
+                    </p3h>
+                </div>
+                <div style="padding-bottom: 10px;">
+                    How a host holds themselves through a meeting contributes greatly to the overall enjoyment. You are
+                    the one inviting people together, so you have a responsibility of providing a good time by
+                    reinforcing your tone and purpose without overstepping and demanding more from your guests than they
+                    expected.
+                </div>
+                <div style="padding-bottom: 10px;">
+                    In addition, a host needs to have the energy to see their meeting through. Several times, I found
+                    myself unprepared and frazzled from earlier events in the day, which in turn would lead to a messy
+                    introduction and confused guests. 
+                </div>
+        </div>
+    </div>
+
+    <div class="sideImage">
+        <div style="padding: 0px 10px 0px 10px; text-indent: 0px; ; ">
+            <p4 style="line-height: 150%;">
+                <div style="margin-bottom: 20px; margin-top: 20px;">
+                    <p3h>
+                        <b2>Experiment - Agenda Cards
+                        </b2>
+                    </p3h>
+                </div>
+                <div>
+                    I didn't want technology to distract from meetings, but someone still needed to check time and be
+                    "that guy" (usually me) when a section went on for too long. Written agendas were suggested so
+                    everyone shared an equal awareness and responsibility staying on track of time. These cards also
+                    served as a reminder for what was happening in that meeting. For my runs of Fella Talk, I had
+                    printed cards for each person, but I think a single larger agenda in the middle of the table could
+                    work just as well.
+
+                </div>
+
+                <p4 style="line-height: 150%;"></p4>
+                <div style="margin-bottom: 20px; margin-top: 20px;">
+                    <p3h>
+                        <b2>Experiment - Icebreaker Questions
+                        </b2>
+                    </p3h>
+                </div>
+                <div>
+                    I had included random ice breaker questions on each agenda card in case there was any dead space in
+                    the conversation. My thought was that the mystery of what question was going to be asked could help
+                    bring life back to a dead air, but my guests never needed to use them other than trying them at the
+                    first meeting.
+                </div>
+
+                <p4 style="line-height: 150%;">
+                    <div style="margin-bottom: 20px; margin-top: 20px;">
+                        <p3h>
+                            <b2>Experiment - Notes Section
+                            </b2>
+                        </p3h>
+                    </div>
+                    <div>
+                        During critiques, I noticed that some guests had words to share but didn't have the opportunity
+                        to. I modified the agenda cards to have an explicit notes section so that it could be passed
+                        down later, but overall the addition did not see much use. Sticky notes would likely be a better
+                        alternative since one could pass multiple notes out to presenters instead of the single note
+                        card.
+                    </div>
 
         </div>
+        </p4>
+        <div style="padding: 0px 50px 0px 50px;  text-indent: 0px; ;">
+            <img class="banner" style="max-height: 60vh;" src="assets/images/fellaTalk/sidePlaceholder.png" />
+        </div>
+    </div>
 
+    <img class="banner3" src="assets/images/fellaTalk/banner8.png" />
+    <div style="text-align: center;">
+        <p4 style="padding-left: 0vw;color:#d1cbbb; font-size:16px;"> Description Text Here</br> <i>Going through the
+                Fella Motions</i></p4>
+    </div>
+
+    <p4>
         <div class="paragraph">
-            All of my findings were incredibly interesting but there were a few problems in how to present them.
+            Gatherings will have their main course that draws people to decide to attend in the form of the activity.
+            These will call back to the purpose of your meeting as a way for you to see that purpose through. 
+        </div>
+    </p4>
 
+
+    <img class="banner3" src="assets/images/fellaTalk/banner9.png" />
+
+    <p4>
+        <div class="paragraph" style="margin-bottom: 5px; margin-top: 5px; padding-top: 5px; padding-bottom: 5px;">
+        </div>
+        <div class="paragraph" style="margin-bottom: 5px; margin-top: 5px; padding-top: 5px; padding-bottom: 5px;">
+            Critique sessions started rough, with everyone getting used to how little time we had but by the end of the
+            semester, guests had a handle of how much time we had, and I became better at proctoring discussion. Through
+            these critiques, I would begin to see various guest archetypes emerge.
+        </div>
+    </p4>
+
+    <div class="sideImage">
+        <div style="padding: 0px 50px 0px 50px;  text-indent: 0px; ;">
+            <img class="banner" style="max-height: 60vh;" src="assets/images/fellaTalk/sidePlaceholder.png" />
+        </div>
+        <div style="padding: 0px 10px 0px 10px; text-indent: 0px; ; ">
+            <p4 style="line-height: 150%;">
+                <div style="margin-bottom: 15px; margin-top: 2px;">
+                    <p3h>
+                        <b2> Theme - Talkers and Thinkers</b2>
+                    </p3h>
+                </div>
+                <div style="padding-bottom: 10px;">
+                    Guest archetypes may become evident across multiple meetings, especially in group discussions.
+                    Ratios of
+                    the two can impact conversation flow and can event extend into how guests arrange themselves
+                </div>
+                <div style="padding-bottom: 10px;">
+                    <b2>Talkers</b2> are generally extroverts, speaking up with many points and often start talking over
+                    each other.
+                    They are the bread and butter of a conversation and help keep it running strong.
+
+                </div>
+
+                <div style="padding-bottom: 10px;">
+                    <b2>Thinkers</b2> are more introverted, staying quiet and listening for a chance to chime in with a
+                    deep thought.
+                    They serve to shift the perspective of a conversation and open it to new ideas.
+
+                </div>
+
+                <div style="padding-bottom: 10px;">
+                    Take care into noticing these groups emerge and catering to their needs. Most often, thinkers feel
+                    like
+                    they don't have the space to enter a conversation, so consider offering ways to help them interject
+                    with
+                    their thoughts.
+                </div>
+            </p4>
+        </div>
+    </div>
+
+
+    <img class="banner3" src="assets/images/fellaTalk/banner10.png" />
+
+    <p4>
+        <div class="paragraph" style="margin-bottom: 5px; margin-top: 5px; padding-top: 5px; padding-bottom: 5px;">
+           
+        </div>
+        <div class="paragraph" style=" margin-top: 5px; padding-top: 5px; ">
+            Critique sessions started rough, with everyone getting used to how little time we had but by the end of the
+            semester, guests had a handle of how much time we had, and I became better at proctoring discussion. Through
+            these critiques, I would begin to see various guest archetypes emerge.
+        </div>
+        <div class="paragraph">
+            The Talker and Thinker archetypes were still evident in this section, possibly even more so as there was no
+            longer a stable topic for Thinkers to latch on and think about.
+        </div>
+    </p4>
+
+    <div class="sideImage">
+        <div style="padding: 0px 50px 0px 50px;  text-indent: 0px; ;">
+            <img class="banner" style="max-height: 60vh;" src="assets/images/fellaTalk/sidePlaceholder.png" />
+        </div>
+        <div style="padding: 0px 10px 0px 10px; text-indent: 0px; ; ">
+            <p4 style="line-height: 150%;">
+                <div style="margin-bottom: 15px; margin-top: 2px;">
+                    <p3h>
+                        <b2> Theme - Bobs and Chumps</b2>
+                    </p3h>
+                </div>
+                <div style="padding-bottom: 10px;">
+                    Two more archetypes may appear during meetings that serve to disturb meetings. It is a host's
+                    responsibility to keep them in line, such as asking them to stay engaged, or removing them from the
+                    group if need be.
+
+                </div>
+                <div style="padding-bottom: 10px;">
+                    <b2>Bobs</b2> are a term from The Art of Gathering for the people who just exist at a gathering.
+                    They are passively antagonistic pulling from the energy of the group by existing, as their presence
+                    forces people to split their attention in an extra direction.
+
+                </div>
+
+                <div style="padding-bottom: 10px;">
+                    <b2>Chumps</b2>  are actively antagonistic, whether they mean to or not. These can be inside or
+                    outside forces pulling attention away from a meeting, such as two group members talking loudly
+                    amongst themselves, or a text message that draws a member away from conversation.
+
+                </div>
+
+
+            </p4>
+        </div>
+    </div>
+
+    <div class="sideImage">
+    <div style="padding: 0px 50px 0px 50px;  text-indent: 0px; ;">
+        <img class="banner" style="max-height: 60vh;" src="assets/images/fellaTalk/sidePlaceholder.png" />
+    </div>
+    <div style="padding: 0px 10px 0px 10px; text-indent: 0px; ; ">
+        <p4 style="line-height: 150%;">
+            <div style="margin-bottom: 15px; margin-top: 2px;">
+                <p3h>
+                    <b2> Theme - Endings</b2>
+                </p3h>
+            </div>
+            <div style="padding-bottom: 10px;">
+                Just like openings, meetings need to end with a bang and avoid fizzling out. An improper ending can lead
+                to dissatisfaction as guests can feel that not everything was wrapped up properly. Carry your tone and
+                energy through one last time to keep people excited to come to the next gathering.
+
+
+            </div>
+            <div style="padding-bottom: 10px;">
+                Some people may have to leave earlier than others, which is where easy-outs can come in handy. These can
+                come in at the end of certain activities, where you can keep those that want to stay, while letting
+                people go without them feeling awkward for leaving abruptly. 
+            </div>
+        </p4>
+    </div>
+    </div>
+
+    <div class="sideImage">
+        <div style="padding: 0px 10px 0px 10px; text-indent: 0px; ; ">
+            <p4 style="line-height: 150%;">
+                <div style="margin-bottom: 20px; margin-top: 2px;">
+                    <p3h>
+                        <b2>Experiment - Stamp Books
+                        </b2>
+                    </p3h>
+                </div>
+                With endings being just as memorable as openings, I wanted to use the act of stamping to enhance guest's experiences. I provided a stamp book that logged attendance for each meeting to serve as an activity to end the event, a way out for people leaving early, and a memento for after the meeting. Though many forgot theirs multiple times, the ones that did have theirs greatly enjoyed stamping before leaving and said it contributed to their enjoyment of the event.
         </div>
 
-        <div class="paragraph">
-            <aside>1. There would be a lot of material to cover over the multiple days of Fella Talk</aside>
-            <aside>2. My findings would be focused on the experience I wanted to cultivate
-            </aside>
+        <div style="padding: 0px 50px 0px 50px;  text-indent: 0px; ;">
+            <img class="banner" style="max-height: 60vh;" src="assets/images/fellaTalk/sidePlaceholder.png" />
+        </div>
+    </div>
 
+    <img class="banner" src="assets/images/fellaTalk/diagram3.png" />
+
+
+    <img class="banner3" src="assets/images/fellaTalk/banner11.png" />
+    <div style="text-align: center;">
+        <p4 style="padding-left: 0vw;color:#d1cbbb; font-size:16px;"> Embracing volatility in a structured event to see
+            what works best</br> <i>The Chaos of the Fellas</i></p4>
+    </div>
+
+    <p4>
+        <div class="paragraph">
+            Throughout my gatherings, there was consistent embrace of volatility. Despite my best efforts to prepare, many outside circumstances would lead to me having different guests, use different table setups, or work in completely different venues.
+
+        </div>
+        <div class="paragraph">
+            At the end of the semester, I would also run experimental Fella Talks with random groups in different locations to explore more variations.
+        </div>
+    </p4>
+
+    <div class="sideImage">
+        <div style="padding: 0px 10px 0px 10px; text-indent: 0px; ; ">
+            <p4 style="line-height: 150%;">
+                <div style="margin-bottom: 20px; margin-top: 2px;">
+                    <p3h>
+                        <b2>Experiment - Varied Groups
+                        </b2>
+                    </p3h>
+                </div>
+                <div style="paragraph">
+               <b2>Missing Members - Overall Low Impact</b2>
+               -  Even if they were a talker, there wasn't much impact. At one point, I had to step out of a meeting, but members said nothing changed much as they were already in discussion.
+            </div>
+
+            <div style="paragraph">
+                <b2>New Members - Potentially High Impact</b2>
+              -  New members are not used to the norms and do not have any investment into the group yet. While the member for a day that I had contributed to discussions well, they teetered on becoming a Bob or Chump as they would frequently leave the table.
+            </div>
+
+             <div style="paragraph">
+                <b2>Random Members
+
+                </b2>
+               -  Holding single run groups with random members held interesting results. Since most people didn't know each other, they would stay fairly silent and the host had to take the lead to prompt discussion. More meetings could improve the relations between people but for single run events, it's better to invite friend groups.
+             </div>
+        </div>
+
+        <div style="padding: 0px 50px 0px 50px;  text-indent: 0px; ;">
+            <img class="banner" style="max-height: 60vh;" src="assets/images/fellaTalk/sidePlaceholder.png" />
+        </div>
+    </div>
+
+    <div class="sideImage">
+        <div style="padding: 0px 10px 0px 10px; text-indent: 0px; ; ">
+            <p4 style="line-height: 150%;">
+                <div style="margin-bottom: 20px; margin-top: 2px;">
+                    <p3h>
+                        <b2>Experiment - Varied Table
+                        </b2>
+                    </p3h>
+                </div>
+                <div style="paragraph">
+                    <b2>Table Structure                    </b2>
+                   -  Discussion was at its strongest when everyone was in a circle, which placed guests equidistant from each other. U-Shapes were also good for holding attention as the host. The further everyone was from each other, the weaker discussion was, with guests choosing to talk to people closer to them.
+
+                 </div>
+     
+
+                 <div style="paragraph">
+                     <b2>Notes</b2> </br>
+                     <aside2> • Long and open tables can be closed off by using obstructing objects, keeping the meeting sealed and preventing Chumps from entering.
+ </aside2> </br>
+                     <aside2> • Talkers and Thinkers seemed to consistently separate into opposite sides, despite different table layouts. </aside2> </br>
+                 </div>
+     
+                 
+        </div>
+
+        <div style="padding: 0px 50px 0px 50px;  text-indent: 0px; ;">
+            <img class="banner" style="max-height: 60vh;" src="assets/images/fellaTalk/sidePlaceholder.png" />
+        </div>
+    </div>
+
+    <div class="sideImage">
+        <div style="padding: 0px 10px 0px 10px; text-indent: 0px; ; ">
+            <p4 style="line-height: 150%;">
+                <div style="margin-bottom: 20px; margin-top: 2px;">
+                    <p3h>
+                        <b2>Experiment - Varied Venue
+                        </b2>
+                    </p3h>
+                </div>
+                <div style="paragraph"> Fella Talks were held in three locations during the semester, which all held strong effects on the tone.
+                </div>
+                <div style="paragraph">
+                    <b2>The Classroom</b2>
+                     was sealed off which gave guests a nice sense of privacy but the lack of windows, spread out tables, and harsh lighting, coupled with the educational nature of the room made it feel uncomfortable. This room fit its role as a classroom but worked against our intents.
+                </div>
+     
+                 <div style="paragraph">
+                     <b2>The Design Lab</b2>
+                      was a familiar venue to all guests, with open windows and greenery contributing to a calming space. However, the open room allowed for chumps to invade the space, creating distractions and sometimes making the room unavailable.
+                    </div>
+     
+                  <div style="paragraph">
+                     <b2>The Alcove
+     
+                     </b2>
+                      was a temporary spot formed in an exhibition space. It's warm, dim lighting and small, enclosed space created a very intimate experience akin to a dinner party.                   </div>
+        </div>
+
+        <div style="padding: 0px 50px 0px 50px;  text-indent: 0px; ;">
+            <img class="banner" style="max-height: 60vh;" src="assets/images/fellaTalk/sidePlaceholder.png" />
+        </div>
+    </div>
+
+    <img class="banner" src="assets/images/fellaTalk/largePlaceholder.png" />
+
+    <img class="banner2" src="assets/images/fellaTalk/banner12.png" />
+    <div style="text-align: center;">
+        <p4 style="padding-left: 0vw;color:#d1cbbb; font-size:16px;"> Reflection </br> <i>Funny Text Here</i></p4>
+    </div>
+
+    <img class="banner3" src="assets/images/fellaTalk/banner13.png" />
+    <div style="text-align: center;">
+        <p4 style="padding-left: 0vw;color:#d1cbbb; font-size:16px;"> Reflecting back on what I've learned by holding
+            Fella Talks</br> <i>The Grand Fella Review</i></p4>
+    </div>
+
+    <p4>
+        <div class="paragraph">
+            Through this project, I've gained a deeper understanding over everything that goes into planning an event, from invitation to ending. Through readings and several Fella Talks held throughout the semester, I worked with my guests directly to help craft an experience that we all benefited from.
+        </div>
+        <div class="paragraph">
+            My guests all benefited from extra feedback on projects. Several had peer reviews in classes that didn't meet their expectations, and Fella Talk was able to provide. They all felt like they grew closer through the talks through the shared activity of carving. Most importantly though, is that they all had fun.        </div>
+    </p4>
+
+
+    <img class="banner3" src="assets/images/fellaTalk/bannerPlaceholder.png" />
+    <div style="text-align: center;">
+        <p4 style="padding-left: 0vw;color:#d1cbbb; font-size:16px;"> Condensing my learnings into a book so that others
+            can benefit</br> <i>A Guide to Fella Talking!</i></p4>
+    </div>
+
+    <p4>
+        <div class="paragraph">
+            Why write a booklet over just sharing the learnings through the case study? 
+        </div>
+        <div class="paragraph">
+            While one could read the same texts that I did, I'm of the belief that making the supposed barrier of entry to holding meetings as small as possible should be the goal of my research. As opposed to longer texts, I aimed to keep my page count low and my words simple to make the idea of starting a meeting less intimidating, in hopes that more people make that first step. </div>
+            <div class="paragraph">
+                While the best information will come from people doing their own research on their groups, I hope that my own experiments and broad advice can serve new hosts well in guiding their first meetings.</div>
         
-        </div>
+  
+</p4>
 
-        <div class="paragraph">
-            My findings would be focused on the experience I wanted to cultivate
+<img class="banner" src="assets/images/fellaTalk/largePlaceholder.png" />
 
-        </div>
-
-        <div class="paragraph">
-            To refrain from reiterating what’s in the book, “an abridged guide to hosting your own Fella Talk and
-            other miscellaneous collaborative activities” is designed from the ground up to be a welcoming learning
-            experience about how to build a community. While I did greatly appreciate the readings I did and I
-            encourage people to read books, many of them could come off as intimidating or unnecessary to someone
-            who just wants to start a small group up. I chose to make my book only 18 pages and write it all in
-            “more simple and silly” language, in the spirit of the Fella Talks so that it could serve as an
-            introduction to the world of community design.
-
-        </div>
-
-        <div class="paragraph">
-            Since the semester was nearing a close, I wasn’t able to get much feedback or examples of its use but
-            various readers really appreciated the depth I went into the topic while still remaining digestible. It
-            is definitely worthwhile to see how this book could be used with the incoming freshman and other
-            organizations to see how my research applies to other kinds of communities.
-
-        </div>
-
-        <div class="paragraph">
-            I had done a lot this year, but there was still much more to learn about community design. What started
-            as me being upset with the current state of our program blossomed into a newfound passion in designing
-            community interactions and accompanying material for them. There is much to keep improving on, like
-            testing more groups of people, different activities, different hosts, etc. - many things that I was
-            regrettably unable to take on during this one semester. This is just the beginning of the FELLA TALKS!
-
-        </div>
-
-    </p4>
+<img class="banner" src="assets/images/fellaTalk/largePlaceholder.png" />
 
 
-</body>
 
-<footer>
+    </body>
 
-</footer>
+    <footer>
+
+    </footer>
 
 </html>

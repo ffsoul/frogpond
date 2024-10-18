@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <title>Kenny's Frog Pond</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/images/index/Logo.png"
+    />
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://kennycly.com/" />
+    <meta
+      name="description"
+      content="Kenny Ly - Designer, Artist, and Frog Enthusiast"
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Kenny's Frog Pond" />
+    <meta property="og:type" content="portfolio" />
+    <meta property="og:url" content="https://kennycly.com" />
+    <meta
+      property="og:description"
+      content="Kenny Ly - Designer, Artist, and Frog Enthusiast"
+    />
+    <meta property="og:image" content="assets/images/index/LogoHD.png" />
+
+    <!--     <link rel="stylesheet" href="https://unpkg.com/98.css" /> -->
+
+    <link rel="stylesheet" href="semantic.min.css" />
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--     Import the webpage's script -->
+    <script src="/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+      integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--     <link rel="stylesheet" href="woah.css" /> -->
+  </head>
+
+  <style>
+      * {
+      box-sizing: border-box;
+    }
+
+
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .columnBox {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+
+    .columnBox img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .columnBox {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .columnBox {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+
+  <body>
+    <!--Top Menu -->
+    <div class="ui top fixed menu">
+      <a class="item" href="index.html">
+        <img style="width: 4.5vh" src="assets/images/index/Logo.png" />
+      </a>
+
+      <div class="right menu">
+        <a class="item" href="index.html">Home</a>
+        <div class="ui simple dropdown item">
+          Workshop
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="classprojects.html">Class Projects</a>
+            <a class="item" href="clientwork.html">Client Work</a>
+          </div>
+        </div>
+        <div class="ui simple dropdown item">
+          Playground
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="artwork.html">Artwork</a>
+            <a class="item" href="modeling.html">Modeling</a>
+            <a class="item" href="prints.html">Prints</a>
+          </div>
+        </div>
+        <a class="item" href="about.html">About</a>
+      </div>
+    </div>
+
+    <h2 style="text-align: center; margin-bottom: 5px">Workshop</h2>
+
+    <p3h
+      style="
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 10px;
+        font-size: 24px;
+      "
+    >
+      Small Class Projects</p3h
+    >
+
+    <!--     <img
+      style="width: 100%; margin: 0px -40px 0px 0px"
+      src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/rat-rage-rage.gif?v=1680540187537"
+    />
+    <br>
+    <p4 style = "text-align:center; display:flex; justify-content:center; margin:5px;"> aw rats! currently under construction, check back soon!</p4>
+    <br />
+     -->
+
+    <div class="row">
+      <div class="columnBox">
+        <img
+          src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/wsMap.jpg?v=1680968932894"
+          style="width: 100%"
+        />
+
+        <!--     <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/wsTP1.jpg?v=1680968615435" style="width:100%"> -->
+      </div>
+      <div class="columnBox">
+        <img
+          src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/wsHH1.png?v=1680968581781"
+          style="width: 100%"
+        />
+        <img
+          src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/wsAnimatedLetter.gif?v=1680968564423"
+          style="width: 100%"
+        />
+        <img
+          src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/wsBiophilic.png?v=1680968568481"
+          style="width: 100%"
+        />
+        <!--     <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/wsTP2.jpg?v=1680968615844" style="width:100%"> -->
+      </div>
+      <div class="columnBox">
+        <img
+          src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/wsHH2.png?v=1680968583477"
+          style="width: 100%"
+        />
+        <img
+          src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/wsFTF.png?v=1680968579551"
+          style="width: 100%"
+        />
+        <!--     <img src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/wsTP3.jpg?v=1680969073263" style="width:100%"> -->
+      </div>
+      <div class="columnBox">
+        <img
+          src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/wsHH3.png?v=1680968585036"
+          style="width: 100%"
+        />
+        <img
+          src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/wsStatement.png?v=1680968614760"
+          style="width: 100%"
+        />
+        <img
+          src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/wsLGBTQ.png?v=1680968598011"
+          style="width: 100%"
+        />
+        <img
+          src="https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/wsPF.png?v=1680968609666"
+          style="width: 100%"
+        />
+      </div>
+    </div>
+  </body>
+
+  <footer>
+  
+</footer>
+
+</html>
