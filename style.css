@@ -191,6 +191,14 @@ p4 {
   color: #ffffff;
 }
 
+p4c {
+  font-size: 18px;
+  font-family: bahn, sans-serif;
+  font-weight: normal;
+  color: #ffffff;
+  
+}
+
 p4h {
   font-size: 16px;
   font-family: bahn, sans-serif;
@@ -397,8 +405,7 @@ img {
 }
 
 .banner2 {
-  display: block;
-  max-width:40vw;
+  max-width:45vw;
   max-height:60vh;
   width: auto;
   height: auto;
@@ -406,10 +413,11 @@ img {
   margin-bottom: 20px;
   padding-left: 0vw;
   border-radius:10px;
+  padding-left: 15vw;
+
 }
 
 .banner3 {
-  display: block;
   max-width:60vw;
   max-height:12vh;
   width: auto;
@@ -418,6 +426,8 @@ img {
   margin-bottom: 20px;
   padding-left: 0vw;
   border-radius:10px;
+  padding-left: 15vw;
+
 }
 
 .imageTall {
