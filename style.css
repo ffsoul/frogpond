@@ -92,6 +92,11 @@ b2{
   font-size:20px;
 }
 
+
+.book{
+  width: 60vw;
+}
+
 /* Page structure */
 .wrapper {
   min-height: var(--wrapper-height);
@@ -356,7 +361,9 @@ p5 {
   height: 100px;
 }
 
-
+.book{
+  width: 100vw;
+}
 
 .hero2 {
   max-width:40vw;
@@ -540,9 +547,11 @@ aside2 {
   }
   .paragraph {
     padding-right: 5vw;
+    padding-left: 5vw;
   }
   .paragraph2 {
     padding-right: 5vw;
+    padding-left: 5vw;
   }
   .hero2 {
     width: 100%;
