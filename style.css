@@ -370,10 +370,23 @@ p5 {
   max-height:80vh;
   width: auto;
   height: auto;
+  border-radius:10px;
+
 }
 
 .hero3 {
   height: 60vh;
+  border-radius:10px;
+
+}
+
+.hero4 {
+  max-width:30vw;
+  max-height:80vh;
+  width: auto;
+  height: auto;
+  border-radius:10px;
+
 }
 
 img {
@@ -559,6 +572,10 @@ aside2 {
   .hero3 {
     height: 25vh;
   }
+  .hero4 {
+    width: 100%;
+  }
+  
 }
 
 .break {
