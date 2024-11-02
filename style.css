@@ -568,6 +568,8 @@ aside2 {
   }
   .hero2 {
     width: 100%;
+    max-width:100%;
+
   }
   .hero3 {
     height: 25vh;
