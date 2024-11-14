@@ -139,7 +139,14 @@ h1 {
 
 h1a {
   color: #242418;
-  font-size: 8vw;
+  font-size: calc(6vw + 1vw);
+  font-family: Altone, sans-serif;
+  font-weight: bold;
+}
+
+h1b {
+  color: #242418;
+  font-size: calc(22px + .8vw);
   font-family: Altone, sans-serif;
   font-weight: bold;
 }
@@ -239,22 +246,14 @@ p5 {
 .hero {
   display: flex;
   flex-wrap: wrap;
-  /*   padding: 10% 10% 0% 10%;  */
-  padding: 15vh 0px 3vh 0px;
+  padding: 25vh 0px 3vh 0px;
   width: 100%;
   min-height: 100%;
-  /*   padding-bottom: 25px; */
   justify-content: center;
   align-content: center;
   background: #adfe52;
 }
 
-@media only screen and (max-width: 640px) {
-  .hero {
-    padding: 10vh 0px 3vh 0px;
-    flex-wrap: wrap !important;
-  }
-}
 
 .gallery {
   padding: 0% 5% 5% 5%;
@@ -343,17 +342,22 @@ p5 {
   box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
   border-radius: 0.28571429rem;
   min-height: 2.85714286em;
+  
 }
 
 .menu > a {
   font-family: Altone, sans-serif;
+  font-size: calc(12px + .15vw);
   font-weight: Bold;
+  
 }
 
 .ui.menu .dropdown.item .menu {
+  
   background-color: #adfe52;
   font-family: Altone, sans-serif;
   font-weight: Bold;
+
 }
 
 .break {
@@ -489,6 +493,18 @@ aside2 {
 @media only screen and (max-width: 1200px) {
   .break {
     height: 10px;
+  }
+
+  .hero {
+    padding: 8vh 0px 3vh 0px;
+    flex-wrap: wrap !important;
+  }
+  .sidetext {
+    padding: 10px 0px 20px 0px;
+  }
+  
+  .autofrogbox {
+    padding: 0px 0px 0px 0px;
   }
 
   .projectDetails {

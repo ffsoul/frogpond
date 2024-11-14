@@ -15,13 +15,14 @@ let pause = true;
 
 let myColour, myColour2, myColour3; //Keep track of our random colour.
 
+
 function windowResized() {
-  resizeCanvas;
+  resizeCanvas
 }
 
 function setup() {
   colorMode(HSB, 100);
-  canvas = createCanvas(350, 350);
+  canvas = createCanvas(350,350);
 
   canvas.parent("autofroggy");
 
