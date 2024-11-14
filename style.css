@@ -223,9 +223,7 @@ p5 {
   h1a {
     font-size: 12vw;
   }
-  h1c {
-    margin-top: 0px;
-  }
+
 }
 
 
@@ -492,10 +490,13 @@ aside2 {
   font-weight: bold !important;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 960px) {
   .sidetext {
     padding: 10px 20px 20px 20px;
     text-align: center;
+  }
+  h1c {
+    margin-top: 0px;
   }
 
 }
