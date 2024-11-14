@@ -146,7 +146,7 @@ h1a {
 
 h1b {
   color: #242418;
-  font-size: calc(22px + .8vw);
+  font-size: calc(20px + .8vw);
   font-family: Altone, sans-serif;
   font-weight: bold;
 }
@@ -223,6 +223,9 @@ p5 {
   h1a {
     font-size: 12vw;
   }
+  h1c {
+    margin-top: 0px;
+  }
 }
 
 
@@ -236,7 +239,7 @@ p5 {
 .hero {
   display: flex;
   flex-wrap: wrap;
-  padding: 25vh 0px 3vh 0px;
+  padding: 20vh 0px 3vh 0px;
   width: 100%;
   min-height: 100%;
   justify-content: center;
@@ -250,6 +253,7 @@ p5 {
   justify-content: center;
   align-items:center;
   padding-right:100px;
+  padding-bottom:60px;
 }
 
 
@@ -509,6 +513,8 @@ aside2 {
 
   .landingTop{
     padding-right:0px;
+    padding-bottom:0px;
+
   }
   .autofrogbox {
     padding: 0px 0px 0px px;
