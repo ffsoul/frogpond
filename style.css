@@ -244,6 +244,14 @@ p5 {
   background: #adfe52;
 }
 
+.landingTop{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items:center;
+  padding-right:100px;
+}
+
 
 .gallery {
   padding: 0% 5% 5% 5%;
@@ -278,7 +286,8 @@ p5 {
 }
 
 .sidetext {
-  padding: 0 20px 10px 20px;
+  padding: 0 40px 10px 20px;
+  text-align: right;
 }
 
 .item {
@@ -479,6 +488,14 @@ aside2 {
   font-weight: bold !important;
 }
 
+@media only screen and (max-width: 964px) {
+  .sidetext {
+    padding: 10px 0px 20px 0px;
+    text-align: center;
+  }
+
+}
+
 
 @media only screen and (max-width: 1200px) {
   .break {
@@ -489,12 +506,12 @@ aside2 {
     padding: 8vh 0px 3vh 0px;
     flex-wrap: wrap !important;
   }
-  .sidetext {
-    padding: 10px 0px 20px 0px;
+
+  .landingTop{
+    padding-right:0px;
   }
-  
   .autofrogbox {
-    padding: 0px 0px 0px 0px;
+    padding: 0px 0px 0px px;
   }
 
   .projectDetails {
