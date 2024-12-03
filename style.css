@@ -395,13 +395,20 @@ p5 {
   width: auto;
   height: auto;
   border-radius:10px;
-
 }
 
 .hero3 {
   height:auto;
   width:auto;
   max-height: 60vh;
+  border-radius:10px;
+
+}
+
+.hero3r {
+  height:auto;
+  width:auto;
+  max-height: 80vh;
   border-radius:10px;
 
 }
@@ -548,6 +555,24 @@ aside2 {
     max-width:80vw;
   }
 
+  .hero3r {
+    max-height: 60vh;
+    max-width:80vw;
+  }
+  .hero2 {
+    width: 100%;
+    max-width:100%;
+
+  }
+
+  .hero4 {
+    max-width:80vw;
+    max-height:80vh;
+    width: auto;
+    height: auto;
+    border-radius:10px;
+  }
+
 }
 
 
@@ -647,19 +672,6 @@ aside2 {
   .paragraph2 {
     padding-right: 5vw;
     padding-left: 5vw;
-  }
-  .hero2 {
-    width: 100%;
-    max-width:100%;
-
-  }
-
-  .hero4 {
-    max-width:80vw;
-    max-height:80vh;
-    width: auto;
-    height: auto;
-    border-radius:10px;
   }
   
 }
