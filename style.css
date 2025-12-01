@@ -408,10 +408,11 @@ p5 {
 .hero3r {
   height:auto;
   width:auto;
-  max-height: 80vh;
+  max-height: 60vh;
   border-radius:10px;
 
 }
+
 
 .hero4 {
   max-width:30vw;
