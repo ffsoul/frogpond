@@ -32,17 +32,6 @@ to this section's matching END comment to see page-specific styles.
 }
 
 /* Import fonts */
-@font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
-    format("opentype");
-}
-@font-face {
-  font-family: HK Grotesk;
-  font-weight: bold;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-    format("opentype");
-}
 
 @font-face {
   font-family: Altone;
@@ -61,7 +50,7 @@ to this section's matching END comment to see page-specific styles.
 @font-face {
   font-family: bahn;
   font-weight: normal;
-  src: url("https://kennycly.com/assets/fonts/Bahnschrift-Regular.TTF")
+  src: url(assets/fonts/Bahnschrift-Regular.TTF)
     format("truetype");
   
 }
@@ -69,7 +58,7 @@ to this section's matching END comment to see page-specific styles.
 @font-face {
   font-family: bahn;
   font-weight: bold;
-  src: url("https://kennycly.com/assets/fonts/Bahnschrift-Bold.TTF")
+  src: url(assets/fonts/Bahnschrift-Bold.TTF)
     format("truetype");
 }
 
@@ -79,7 +68,7 @@ to this section's matching END comment to see page-specific styles.
   ******************************************************************************/
 
 body {
-  font-family: HK Grotesk, sans-serif;
+  font-family: bahn, normal-serif;
   background-color: var(--color-bg);
   margin: 0px 40px 40px 40px;
   margin-bottom: 20px;
