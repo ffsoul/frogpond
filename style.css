@@ -60,15 +60,16 @@ to this section's matching END comment to see page-specific styles.
 
 @font-face {
   font-family: bahn;
-  src: url("https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/BAHNSCHRIFT.TTF?v=1680583644544")
-    format("truetype");
   font-weight: normal;
+  src: url("https://kennycly.com/assets/fonts/Bahnschrift-Regular.TTF")
+    format("truetype");
+  
 }
 
 @font-face {
   font-family: bahn;
   font-weight: bold;
-  src: url("https://cdn.glitch.global/4b879c18-f94f-4754-8aff-3bc8595089fa/BAHNSCHRIFT.TTF?v=1680583644544")
+  src: url("https://kennycly.com/assets/fonts/Bahnschrift-Bold.TTF")
     format("truetype");
 }
 
